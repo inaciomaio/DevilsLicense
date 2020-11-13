@@ -32,6 +32,5 @@ public class CarAI : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        agent.transform.Rotate(0, 0, 10);
     }
 }
