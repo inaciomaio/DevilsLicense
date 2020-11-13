@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using UnityEngine;
 
 public class IntersectionLights : MonoBehaviour
@@ -7,14 +8,14 @@ public class IntersectionLights : MonoBehaviour
     /* 0 is green
        1 is red */
     
-    public int Color;
+    public int color;
     public float T;
 
-    public SpriteRenderer[] HorizontalLights;
-    public SpriteRenderer[] VerticalLights;
-    
+    public SpriteRenderer[] horizontalLights;
+    public SpriteRenderer[] verticalLights;
+
     void Start()
-    {
+    { 
         
     }
 
@@ -24,15 +25,47 @@ public class IntersectionLights : MonoBehaviour
 
         if (T > 10)
         {
-            for (int i = 0; i < HorizontalLights.Length; i++)
+            for (int i = 0; i < horizontalLights.Length; i++)
             {
-                HorizontalLights[i].color = UnityEngine.Color.green;
+                horizontalLights[i].color = UnityEngine.Color.green;
             }
 
-            for (int i = 0; i < VerticalLights.Length; i++)
+            for (int i = 0; i < verticalLights.Length; i++)
             {
-                VerticalLights[i].color = UnityEngine.Color.red;
+                verticalLights[i].color = UnityEngine.Color.red;
             }
         }
+        else if (T > 20)
+        {
+            for (int i = 0; i < horizontalLights.Length; i++)
+            {
+                horizontalLights[i].color = UnityEngine.Color.red;
+            }
+            
+            for (int i = 0; i < verticalLights.Length; i++)
+            {
+                verticalLights[i].color = UnityEngine.Color.red;
+            }
+
+            T = 0;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Car"))
+        {
+            StartCoroutine("CrossingIntersection");
+            //Time.timeScale = 0.5;
+            
+            //Debug.Log("Car entering" + " " + gameObject.name);
+        }
+    }
+
+    private IEnumerator CrossingIntersection()
+    {
+        yield return new WaitForSeconds(1);
+        Debug.Log("Car entering" + " " + gameObject.name);
+        yield return new WaitForSeconds(1);
     }
 }
