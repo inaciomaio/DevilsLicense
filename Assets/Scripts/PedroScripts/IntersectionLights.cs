@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class IntersectionLights : MonoBehaviour
 {
-    /* 0 is green
-       1 is red */
-    
-    public int color;
+    /* * 1 is green
+       * 0 is red
+       * 
+       * !!! Color values should be changed in inspector to match color !!!
+       * Set Array size in inspector
+       */
+
+    public int hcolor;
+    public int vcolor;
     public float T;
 
     public SpriteRenderer[] horizontalLights;
     public SpriteRenderer[] verticalLights;
-
-    void Start()
-    { 
-        
-    }
 
     void Update()
     {
@@ -27,45 +27,47 @@ public class IntersectionLights : MonoBehaviour
         {
             for (int i = 0; i < horizontalLights.Length; i++)
             {
-                horizontalLights[i].color = UnityEngine.Color.green;
+                if (hcolor == 0)
+                {
+                    horizontalLights[i].color = UnityEngine.Color.green;
+                }
+                else if (hcolor == 1)
+                {
+                    horizontalLights[i].color = UnityEngine.Color.red;
+                }
             }
 
             for (int i = 0; i < verticalLights.Length; i++)
             {
-                verticalLights[i].color = UnityEngine.Color.red;
+                if (vcolor == 0)
+                {
+                    verticalLights[i].color = UnityEngine.Color.green;
+                }
+                else if (vcolor == 1)
+                {
+                    verticalLights[i].color = UnityEngine.Color.red;
+                }
             }
-        }
-        else if (T > 20)
-        {
-            for (int i = 0; i < horizontalLights.Length; i++)
+
+            if (hcolor == 0)
             {
-                horizontalLights[i].color = UnityEngine.Color.red;
+                hcolor = 1;
             }
-            
-            for (int i = 0; i < verticalLights.Length; i++)
+            else
             {
-                verticalLights[i].color = UnityEngine.Color.red;
+                hcolor = 0;
             }
 
-            T = 0;
-        }
-    }
+            if (vcolor == 0)
+            {
+                vcolor = 1;
+            }
+            else
+            {
+                vcolor = 0;
+            }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Car"))
-        {
-            StartCoroutine("CrossingIntersection");
-            //Time.timeScale = 0.5;
-            
-            //Debug.Log("Car entering" + " " + gameObject.name);
+                T = 0;
         }
-    }
-
-    private IEnumerator CrossingIntersection()
-    {
-        yield return new WaitForSeconds(1);
-        Debug.Log("Car entering" + " " + gameObject.name);
-        yield return new WaitForSeconds(1);
     }
 }

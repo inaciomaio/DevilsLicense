@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TrafficLight
   - Car
+  - Entry
   layers:
   - Default
   - TransparentFX
