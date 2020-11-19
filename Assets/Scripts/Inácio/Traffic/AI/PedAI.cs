@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CarAI : MonoBehaviour
+public class PedAI : MonoBehaviour
 {
     private NavMeshAgent agent;
 
@@ -13,8 +13,6 @@ public class CarAI : MonoBehaviour
 
     private void Awake()
     {
-        waypoint = FindObjectOfType<WaypointManager>();
-        agent = GetComponent<NavMeshAgent>();
     }
 
     private void Start()
@@ -25,11 +23,6 @@ public class CarAI : MonoBehaviour
         agent.destination = targetDestination;
     }
 
-    private void Rotate()
-    {
-    }
-
-    // Update is called once per frame
     private void Update()
     {
     }
