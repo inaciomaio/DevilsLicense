@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Manager : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
-        
+        if (GameObject.Find("Manager") != null)
+        {
+            Destroy(this);
+        }
     }
 
     void Update()
     {
-        
+
     }
 
     public void Debuglog()
