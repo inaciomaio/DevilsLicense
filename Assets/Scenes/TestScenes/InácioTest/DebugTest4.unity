@@ -1509,6 +1509,7 @@ Transform:
   m_Father: {fileID: 994318913}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &1458638606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1590,6 +1591,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1510696517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,7 +1675,10 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 0.6867426}
   m_Children:
   - {fileID: 519420032}
+<<<<<<< Updated upstream
   - {fileID: 1458638607}
+=======
+>>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1685,17 +1691,29 @@ NavMeshAgent:
   m_GameObject: {fileID: 1510696517}
   m_Enabled: 1
   m_AgentTypeID: -1923039037
+<<<<<<< Updated upstream
   m_Radius: 0.84
+=======
+  m_Radius: 0.5
+>>>>>>> Stashed changes
   m_Speed: 10
   m_Acceleration: 3
   avoidancePriority: 50
   m_AngularSpeed: 3
   m_StoppingDistance: 1
+<<<<<<< Updated upstream
   m_AutoTraverseOffMeshLink: 0
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1.96
   m_BaseOffset: 1
+=======
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+>>>>>>> Stashed changes
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1510696521
