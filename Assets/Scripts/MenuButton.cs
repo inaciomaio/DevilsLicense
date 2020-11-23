@@ -25,6 +25,11 @@ public class MenuButton : MonoBehaviour
         }
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene(3);
+    }
+
     public void DebugRoom()
     {
         SceneManager.LoadScene(2);

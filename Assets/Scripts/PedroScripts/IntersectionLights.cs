@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using UnityEngine;
@@ -10,18 +11,27 @@ public class IntersectionLights : MonoBehaviour
     * 0 is red
     *
     * !!! Color values should be changed in inspector to match color !!!
-    * Organize VLight and HLight Prefabs
-    * Set Array size in inspector
-    * Drag respective this component of the respective manager to new traffic light
+    * Change this component's array size in unity inspector of Intersection1
+    * Add new Vlight or Hlight in component's array
+    * Test for timing
     */
 
     public int hcolor;
     public int vcolor;
     public float tt;
 
+    public Sprite greenLightSp;
+    public Sprite redLightSp;
+
     public SpriteRenderer[] horizontalLights;
     public SpriteRenderer[] verticalLights;
 
+    void Start()
+    {
+        greenLightSp = Resources.Load<Sprite>("Sprites/greenlight");
+        redLightSp = Resources.Load<Sprite>("Sprites/redlight");
+    }
+    
     void Update()
     {
         tt = Manager.T;
@@ -37,11 +47,11 @@ public class IntersectionLights : MonoBehaviour
         {
             if (hcolor == 0)
             {
-                horizontalLights[i].color = UnityEngine.Color.green;
+                horizontalLights[i].sprite = greenLightSp;
             }
             else if (hcolor == 1)
             {
-                horizontalLights[i].color = UnityEngine.Color.red;
+                horizontalLights[i].sprite = redLightSp;
             }
         }
 
@@ -49,11 +59,11 @@ public class IntersectionLights : MonoBehaviour
         {
             if (vcolor == 0)
             {
-                verticalLights[i].color = UnityEngine.Color.green;
+                verticalLights[i].sprite = greenLightSp;
             }
             else if (vcolor == 1)
             {
-                verticalLights[i].color = UnityEngine.Color.red;
+                verticalLights[i].sprite = redLightSp;
             }
         }
 
@@ -84,11 +94,11 @@ public class IntersectionLights : MonoBehaviour
         {
             if (hcolor == 0)
             {
-                horizontalLights[i].color = UnityEngine.Color.green;
+                horizontalLights[i].sprite = greenLightSp;
             }
             else if (hcolor == 1)
             {
-                horizontalLights[i].color = UnityEngine.Color.red;
+                horizontalLights[i].sprite = redLightSp;
             }
         }
 
@@ -96,11 +106,11 @@ public class IntersectionLights : MonoBehaviour
         {
             if (vcolor == 0)
             {
-                verticalLights[i].color = UnityEngine.Color.green;
+                verticalLights[i].sprite = greenLightSp;
             }
             else if (vcolor == 1)
             {
-                verticalLights[i].color = UnityEngine.Color.red;
+                verticalLights[i].sprite = redLightSp;
             }
         }
 

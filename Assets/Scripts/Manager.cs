@@ -6,6 +6,7 @@ public class Manager : MonoBehaviour
 {
     public float timeSlowSeconds = 2.5f;
     public static float T;
+    public float timeScaleValue;
 
     void Start()
     {
@@ -26,7 +27,7 @@ public class Manager : MonoBehaviour
 
     IEnumerator GreenLightUIPrompt()
     {
-        Time.timeScale = 0.03f;
+        Time.timeScale = timeScaleValue;
         yield return new WaitForSecondsRealtime(timeSlowSeconds);
         yield return Time.timeScale = 1f;
     }

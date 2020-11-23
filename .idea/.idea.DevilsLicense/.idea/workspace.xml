@@ -29,8 +29,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
       </list>
     </option>
   </component>
@@ -89,6 +90,8 @@
       <workItem from="1605877133532" duration="5444000" />
       <workItem from="1605893722223" duration="976000" />
       <workItem from="1605896989308" duration="10865000" />
+      <workItem from="1606146995847" duration="2983000" />
+      <workItem from="1606151149552" duration="1713000" />
     </task>
     <servers />
   </component>
