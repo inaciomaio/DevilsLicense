@@ -4,9 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - TrafficLight
   - Car
   - Entry
+  - Horizontal Light
+  - Vertical Light
   layers:
   - Default
   - TransparentFX

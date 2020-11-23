@@ -84,4 +84,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeSlowSeconds: 3
-  timeScaleValue: 0.05
+  timeScaleValue: 0.5

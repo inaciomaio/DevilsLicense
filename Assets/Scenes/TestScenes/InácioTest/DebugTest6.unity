@@ -388,7 +388,7 @@ RectTransform:
   m_Children:
   - {fileID: 308362585}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -542,7 +542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -243, y: -187}
+  m_AnchoredPosition: {x: -127.67857, y: -112.35715}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &308362586
@@ -924,11 +924,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 919858310410794854, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
-      propertyPath: hcolorIm
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919858310410794854, guid: 16f9d3cc0e16a404da90cc6290efb088,
-        type: 3}
       propertyPath: lightsManager
       value: 
       objectReference: {fileID: 178968312}
@@ -992,22 +987,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.16999997
-      objectReference: {fileID: 0}
-    - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.20000003
-      objectReference: {fileID: 0}
-    - target: {fileID: 8888908551571951033, guid: 16f9d3cc0e16a404da90cc6290efb088,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 664368a05a6bab741848292c99002420,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f9d3cc0e16a404da90cc6290efb088, type: 3}
 --- !u!4 &558767327 stripped
@@ -1174,7 +1153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 685310053}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.857468, y: -5.87101, z: 0}
+  m_LocalPosition: {x: -21.857468, y: -5.12101, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 774974468}
@@ -2504,7 +2483,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1723587768
 GameObject:
@@ -2534,7 +2513,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1723587768}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.93, y: -43.11, z: 0}
+  m_LocalPosition: {x: -47, y: -41.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1216382508}
@@ -2957,12 +2936,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1413719111}
     m_Modifications:
-    - target: {fileID: 2138788718969739550, guid: 95a717da78aa74440b9f23e41e6ce035,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2243049855305224dbdc543e2d10ca7b,
-        type: 3}
     - target: {fileID: 2757374074848012716, guid: 95a717da78aa74440b9f23e41e6ce035,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3039,18 +3012,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 919858310410794854, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
-      propertyPath: hcolorIm
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 919858310410794854, guid: 16f9d3cc0e16a404da90cc6290efb088,
-        type: 3}
       propertyPath: lightsManager
       value: 
       objectReference: {fileID: 178968312}
+    - target: {fileID: 919858310410794854, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: hcolorIm
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
       propertyPath: m_Name
       value: Hlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: Horizontal Light
       objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
@@ -3107,11 +3085,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    - target: {fileID: 8888908551571951033, guid: 16f9d3cc0e16a404da90cc6290efb088,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 664368a05a6bab741848292c99002420,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16f9d3cc0e16a404da90cc6290efb088, type: 3}

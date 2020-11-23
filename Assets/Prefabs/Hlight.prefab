@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 919858310410794854}
   m_Layer: 0
   m_Name: Hlight
-  m_TagString: Untagged
+  m_TagString: Horizontal Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,9 +26,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946058667041256501}
-  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -29.453537, y: -8.11553, z: 12.8984375}
-  m_LocalScale: {x: 0.16999999, y: 0.20000002, z: 0.2}
+  m_LocalScale: {x: 0.16999997, y: 0.20000003, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: c09798dec972c1a4797be697667ec692, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 664368a05a6bab741848292c99002420, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,4 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightsManager: {fileID: 0}
-  hcolorIm: 0
+  hcolorIm: 1

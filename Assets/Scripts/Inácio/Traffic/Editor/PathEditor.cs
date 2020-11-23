@@ -18,7 +18,7 @@ public class PathEditor
             Gizmos.color = Color.red * .5f;
         }
 
-        Gizmos.DrawSphere(waypoint.transform.position, .5f);
+        Gizmos.DrawSphere(waypoint.transform.position, .20f);
 
         if (waypoint.NextWaypoint != null)
         {

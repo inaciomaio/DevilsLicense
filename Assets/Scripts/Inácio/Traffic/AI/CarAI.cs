@@ -14,15 +14,19 @@ public class CarAI : MonoBehaviour
 
     private Rigidbody2D car;
 
+    private bool canDrive = true;
+
     private void Awake()
     {
         car = GetComponent<Rigidbody2D>();
+        Physics2D.queriesStartInColliders = false;
     }
 
     private void Update()
     {
         AimToWaypoint();
         MinDstToWaypoint();
+        Raycast();
         //CheckWallDistance();
         Drive();
     }
@@ -46,11 +50,14 @@ public class CarAI : MonoBehaviour
 
     private void Drive()
     {
-        float Distance = Vector2.Distance(transform.position, destination);
+        if (canDrive)
+        {
+            float Distance = Vector2.Distance(transform.position, destination);
 
-        transform.position += transform.up * Time.deltaTime * Vector2.Distance(transform.position, destination);
-        // car.AddForce(transform.up * Speed);
-        // car.drag = 4 / Vector2.Distance(transform.position, destination);
+            transform.position += transform.up * Time.deltaTime * Vector2.Distance(transform.position, destination);
+            // car.AddForce(transform.up * Speed);
+            // car.drag = 4 / Vector2.Distance(transform.position, destination);
+        }
     }
 
     // private void CheckWallDistance()
@@ -62,6 +69,30 @@ public class CarAI : MonoBehaviour
     //         Debug.Log(right.distance + right.collider.name);
     //     }
     // }
+
+    private void Raycast()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, 1);
+
+        if (hit.collider != null && hit.collider.CompareTag("Horizontal Light"))
+        {
+            var trafficH = hit.collider.GetComponent<HorizontalLight>();
+            if (trafficH.hcolorIm != 1)
+            {
+                canDrive = false;
+            }
+            else canDrive = true;
+        }
+        else if (hit.collider != null && hit.collider.CompareTag("Vertical Light"))
+        {
+            var trafficV = hit.collider.GetComponent<VerticalLight>();
+            if (trafficV.vcolorIm != 1)
+            {
+                canDrive = false;
+            }
+            else canDrive = true;
+        }
+    }
 
     public void SetDestination(Vector2 destination)
     {
