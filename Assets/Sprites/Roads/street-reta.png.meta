@@ -1,14 +1,10 @@
 fileFormatVersion: 2
 guid: 13ebd734c8d1f7645a0a546336ed40fb
 TextureImporter:
-<<<<<<< Updated upstream
   internalIDToNameTable:
   - first:
       213: -3116038546256516449
     second: street-reta_0
-=======
-  internalIDToNameTable: []
->>>>>>> Stashed changes
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,33 +37,19 @@ TextureImporter:
     filterMode: 0
     aniso: -1
     mipBias: -100
-<<<<<<< Updated upstream
     wrapU: 1
     wrapV: 1
     wrapW: 1
-=======
-    wrapU: 0
-    wrapV: 0
-    wrapW: 0
->>>>>>> Stashed changes
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-<<<<<<< Updated upstream
   spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 19, y: 0, z: 19, w: 0}
-=======
-  spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
->>>>>>> Stashed changes
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -104,7 +86,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< Updated upstream
   - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
@@ -117,8 +98,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> Stashed changes
   spriteSheet:
     serializedVersion: 2
     sprites: []
