@@ -111,6 +111,7 @@
           <e p="Inácio" t="Include">
             <e p="WaypointManager.cs" t="Include" />
           </e>
+          <e p="Loader.cs" t="Include" />
           <e p="Manager.cs" t="Include" />
           <e p="MenuButton.cs" t="Include" />
           <e p="Pause.cs" t="Include" />

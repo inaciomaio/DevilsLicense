@@ -18,7 +18,7 @@ public class VerticalLight : MonoBehaviour
         {
             _manager = GameObject.Find("Manager").GetComponent<Manager>();
             _prompt = new UnityEvent();
-            _prompt.AddListener(_manager.Debuglog);
+            _prompt.AddListener(_manager.OnGreenLight);
         }
         else
         {
@@ -39,7 +39,6 @@ public class VerticalLight : MonoBehaviour
         }
         else if (collision.CompareTag("Car") && vcolorIm == 1)
         {
-            Time.timeScale = 0.2f;
             _prompt.Invoke();
             //Make UI Appear
         }

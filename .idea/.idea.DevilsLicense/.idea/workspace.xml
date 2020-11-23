@@ -11,8 +11,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Loader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/TreasureScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Manager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -20,14 +22,15 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/TrafficLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/InterSecInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/managerDetection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/managerDetection.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Test Scene/WaypointChoose.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/managerDetection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/managerDetection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Test Scene/WaypointChoose.cs" />
       </list>
     </option>
   </component>
@@ -47,6 +50,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -82,6 +86,9 @@
       <workItem from="1605622308657" duration="1193000" />
       <workItem from="1605644840175" duration="6776000" />
       <workItem from="1605730628644" duration="3381000" />
+      <workItem from="1605877133532" duration="5444000" />
+      <workItem from="1605893722223" duration="976000" />
+      <workItem from="1605896989308" duration="10865000" />
     </task>
     <servers />
   </component>
@@ -94,6 +101,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="911" y="177" width="1009" height="799" key="SettingsEditor" timestamp="1605909522392">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="911" y="177" width="1009" height="799" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605909522392" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605493703442">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

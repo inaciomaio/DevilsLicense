@@ -7,23 +7,15 @@ public class texttimer : MonoBehaviour
 {
     public Text timer;
     public float t;
-    public float treset;
     void Start()
     {
         timer = gameObject.GetComponent<Text>();
     }
-
     
     void Update()
     {
         t += Time.deltaTime;
-        treset += Time.deltaTime;
 
-        if (treset > 10)
-        {
-            treset = 0;
-        }
-        
-        timer.text = "Elapsed Time:" + " " + t.ToString() + "\n" + "Timer:" + " " + treset.ToString() + "\n" + "FPS:" + " " + (1/Time.deltaTime);
+        timer.text = "Elapsed Time:" + " " + t.ToString() + "\n" + "Manager.T:" + " " + Manager.T.ToString() + "\n" + "FPS:" + " " + (1/Time.deltaTime);
     }
 }

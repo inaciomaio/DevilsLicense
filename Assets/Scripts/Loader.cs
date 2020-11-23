@@ -4,18 +4,13 @@ using UnityEngine;
 
 public class Loader : MonoBehaviour
 {
-    public GameObject _manager;
+    public GameObject manager;
     void Awake()
     {
         if (GameObject.Find("Manager") == null)
         {
-            Instantiate(_manager);
+            Instantiate(manager);
             GameObject.Find("Manager(Clone)").name = "Manager";
         }
-    }
-
-    void Update()
-    {
-
     }
 }
