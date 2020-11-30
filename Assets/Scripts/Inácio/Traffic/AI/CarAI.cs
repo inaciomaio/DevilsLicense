@@ -4,41 +4,51 @@ using UnityEngine;
 
 public class CarAI : MonoBehaviour
 {
-    public float Speed = 2f;
+    private float currentVelocity;
+
+    [Range(30, 50)]
+    public int MaxVelocity = 30;
+
+    [Range(0, 5)]
+    public float Acceleration = 2f;
 
     public float TurningSpeed = 2f;
 
     private Vector2 destination;
 
+    private Vector3 previousPosition;
+
     public bool HasReachedDestination;
 
     private Rigidbody2D car;
 
-    private bool canDrive = true;
+    public bool CanDrive = true;
 
     private void Awake()
     {
+        Vector3 previousPosition = transform.position;
         car = GetComponent<Rigidbody2D>();
         Physics2D.queriesStartInColliders = false;
     }
 
     private void Update()
     {
-        AimToWaypoint();
+        MeasureVelocity();
+        //   AimToWaypoint();
         MinDstToWaypoint();
         Raycast();
         //CheckWallDistance();
         Drive();
     }
 
-    private void AimToWaypoint()
-    {
-        Vector3 target = new Vector3(destination.x, destination.y);
-        Vector3 destinationVector = target - transform.position;
-        float angle = Mathf.Atan2(-destinationVector.x, destinationVector.y) * Mathf.Rad2Deg;
-        Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-        transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * TurningSpeed);
-    }
+    // private void AimToWaypoint()
+    // {
+    //     Vector3 target = new Vector3(destination.x, destination.y);
+    //     Vector3 destinationVector = target - transform.position;
+    //     float angle = Mathf.Atan2(-destinationVector.x, destinationVector.y) * Mathf.Rad2Deg;
+    //     Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+    //     transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * TurningSpeed);
+    // }
 
     private void MinDstToWaypoint()
     {
@@ -50,25 +60,27 @@ public class CarAI : MonoBehaviour
 
     private void Drive()
     {
-        if (canDrive)
+        if (CanDrive)
         {
-            float Distance = Vector2.Distance(transform.position, destination);
+            //   float Distance = Vector2.Distance(transform.position, destination);
+            //
+            //   if (Vector2.Distance(transform.position, destination) < 5)
+            //   {
+            //       transform.position += transform.up * Time.deltaTime * Vector2.Distance(transform.position, destination);
+            //   }
+            //   else transform.position += transform.up * Time.deltaTime;
 
-            transform.position += transform.up * Time.deltaTime * Vector2.Distance(transform.position, destination);
-            // car.AddForce(transform.up * Speed);
-            // car.drag = 4 / Vector2.Distance(transform.position, destination);
+            //car.AddForce(transform.up * Acceleration);
+            //car.drag = 2 / Vector2.Distance(transform.position, destination);
+
+            //float speed = 1 * Acceleration;
+            //var direction = Mathf.Sign(Vector2.Dot(car.velocity, car.GetRelativeVector(Vector2.up)));
+            //car.rotation += TurningSpeed * car.velocity.magnitude * direction;
+            //
+            //car.AddRelativeForce(Vector2.up * speed);
+            //car.AddRelativeForce(-Vector2.right * car.velocity.magnitude * TurningSpeed / 2);
         }
     }
-
-    // private void CheckWallDistance()
-    // {
-    //     RaycastHit2D right = Physics2D.Raycast(transform.position, transform.position * .5f);
-    //
-    //     if (right.collider)
-    //     {
-    //         Debug.Log(right.distance + right.collider.name);
-    //     }
-    // }
 
     private void Raycast()
     {
@@ -79,19 +91,26 @@ public class CarAI : MonoBehaviour
             var trafficH = hit.collider.GetComponent<HorizontalLight>();
             if (trafficH.hcolorIm != 1)
             {
-                canDrive = false;
+                CanDrive = false;
             }
-            else canDrive = true;
+            else CanDrive = true;
         }
         else if (hit.collider != null && hit.collider.CompareTag("Vertical Light"))
         {
             var trafficV = hit.collider.GetComponent<VerticalLight>();
             if (trafficV.vcolorIm != 1)
             {
-                canDrive = false;
+                CanDrive = false;
             }
-            else canDrive = true;
+            else CanDrive = true;
         }
+    }
+
+    private void MeasureVelocity()
+    {
+        currentVelocity = ((transform.position - previousPosition).magnitude) * 3 / Time.deltaTime;
+        previousPosition = transform.position;
+        Debug.Log(currentVelocity);
     }
 
     public void SetDestination(Vector2 destination)
