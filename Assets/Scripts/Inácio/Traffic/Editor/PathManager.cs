@@ -51,7 +51,7 @@ public class PathManager : EditorWindow
         if (WaypointRoot.childCount > 1)
         {
             waypoint.PreviousWaypoint = WaypointRoot.GetChild(WaypointRoot.childCount - 2).GetComponent<Waypoint>();
-            waypoint.PreviousWaypoint.NextWaypoint = waypoint;
+            waypoint.PreviousWaypoint.NextWaypoints[waypoint.PreviousWaypoint.NextWaypoints.Count - 1] = waypoint;
 
             waypoint.transform.position = waypoint.PreviousWaypoint.transform.position;
             waypoint.transform.forward = waypoint.PreviousWaypoint.transform.forward;

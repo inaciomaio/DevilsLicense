@@ -10,7 +10,7 @@ public class CarAI : MonoBehaviour
     public int MaxVelocity = 30;
 
     [Range(0, 5)]
-    public float Acceleration = 2f;
+    public float EnginePower = 2f;
 
     public float TurningSpeed = 2f;
 
@@ -21,6 +21,10 @@ public class CarAI : MonoBehaviour
     public bool HasReachedDestination;
 
     private Rigidbody2D car;
+
+    private float steerAngle;
+
+    private float wheelDistance = 20;
 
     public bool CanDrive = true;
 
@@ -33,22 +37,22 @@ public class CarAI : MonoBehaviour
 
     private void Update()
     {
-        MeasureVelocity();
-        //   AimToWaypoint();
+        //MeasureVelocity();
+        AimToWaypoint();
         MinDstToWaypoint();
         Raycast();
         //CheckWallDistance();
         Drive();
     }
 
-    // private void AimToWaypoint()
-    // {
-    //     Vector3 target = new Vector3(destination.x, destination.y);
-    //     Vector3 destinationVector = target - transform.position;
-    //     float angle = Mathf.Atan2(-destinationVector.x, destinationVector.y) * Mathf.Rad2Deg;
-    //     Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-    //     transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * TurningSpeed);
-    // }
+     private void AimToWaypoint()
+     {
+         Vector3 target = new Vector3(destination.x, destination.y);
+         Vector3 destinationVector = target - transform.position;
+         steerAngle = Mathf.Atan2(-destinationVector.x, destinationVector.y) * Mathf.Rad2Deg;
+         Quaternion q = Quaternion.AngleAxis(steerAngle, Vector3.forward);
+         transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * TurningSpeed);
+     }
 
     private void MinDstToWaypoint()
     {
@@ -62,16 +66,17 @@ public class CarAI : MonoBehaviour
     {
         if (CanDrive)
         {
+
             //   float Distance = Vector2.Distance(transform.position, destination);
             //
             //   if (Vector2.Distance(transform.position, destination) < 5)
             //   {
             //       transform.position += transform.up * Time.deltaTime * Vector2.Distance(transform.position, destination);
             //   }
-            //   else transform.position += transform.up * Time.deltaTime;
+            //   else transform.position += transform.up * Time.deltaTime * Acceleration;
 
             //car.AddForce(transform.up * Acceleration);
-            //car.drag = 2 / Vector2.Distance(transform.position, destination);
+            //car.drag = 4 / Vector2.Distance(transform.position, destination);
 
             //float speed = 1 * Acceleration;
             //var direction = Mathf.Sign(Vector2.Dot(car.velocity, car.GetRelativeVector(Vector2.up)));
@@ -80,6 +85,12 @@ public class CarAI : MonoBehaviour
             //car.AddRelativeForce(Vector2.up * speed);
             //car.AddRelativeForce(-Vector2.right * car.velocity.magnitude * TurningSpeed / 2);
         }
+    }
+
+    private void Acceleration()
+    {
+
+
     }
 
     private void Raycast()

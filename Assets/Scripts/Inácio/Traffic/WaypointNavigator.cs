@@ -21,7 +21,9 @@ public class WaypointNavigator : MonoBehaviour
     {
         if (car.HasReachedDestination)
         {
-            currentWaypoint = currentWaypoint.NextWaypoint;
+            int direction = Random.Range(0, currentWaypoint.NextWaypoints.Count);
+            Debug.Log(direction);
+            currentWaypoint = currentWaypoint.NextWaypoints[direction];
             car.SetDestination(currentWaypoint.GetPosition());
         }
     }

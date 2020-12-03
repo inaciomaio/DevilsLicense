@@ -20,10 +20,14 @@ public class PathEditor
 
         Gizmos.DrawSphere(waypoint.transform.position, .20f);
 
-        if (waypoint.NextWaypoint != null)
+
+        foreach (Waypoint Waypoint in waypoint.NextWaypoints)
         {
-            Gizmos.color = Color.green;
-            Gizmos.DrawLine(waypoint.transform.position, waypoint.NextWaypoint.transform.position);
+            if (Waypoint != null)
+            {
+                Gizmos.color = Color.green;
+                Gizmos.DrawLine(waypoint.transform.position, Waypoint.transform.position);
+            }
         }
     }
 }
