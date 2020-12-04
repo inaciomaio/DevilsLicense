@@ -15,7 +15,7 @@ public class Manager : MonoBehaviour
     void Awake()
     {
         prompt = GameObject.Find("Prompt"); //Test
-        car = GameObject.Find("Car");
+        car = GameObject.Find("Player");
         destination = GameObject.Find("Destination");
     }
     
