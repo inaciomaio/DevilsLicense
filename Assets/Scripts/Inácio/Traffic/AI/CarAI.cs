@@ -24,7 +24,7 @@ public class CarAI : MonoBehaviour
 
     private float steerAngle;
 
-    private float wheelDistance = 20;
+        private float wheelDistance = 20;
 
     public bool CanDrive = true;
 
@@ -67,13 +67,13 @@ public class CarAI : MonoBehaviour
         if (CanDrive)
         {
 
-            //   float Distance = Vector2.Distance(transform.position, destination);
-            //
-            //   if (Vector2.Distance(transform.position, destination) < 5)
-            //   {
-            //       transform.position += transform.up * Time.deltaTime * Vector2.Distance(transform.position, destination);
-            //   }
-            //   else transform.position += transform.up * Time.deltaTime * Acceleration;
+               float Distance = Vector2.Distance(transform.position, destination);
+            
+               if (Vector2.Distance(transform.position, destination) < 2)
+               {
+                   transform.position += transform.up * Time.deltaTime * Vector2.Distance(transform.position, destination);
+               }
+               else transform.position += transform.up * Time.deltaTime * EnginePower;
 
             //car.AddForce(transform.up * Acceleration);
             //car.drag = 4 / Vector2.Distance(transform.position, destination);
@@ -85,12 +85,6 @@ public class CarAI : MonoBehaviour
             //car.AddRelativeForce(Vector2.up * speed);
             //car.AddRelativeForce(-Vector2.right * car.velocity.magnitude * TurningSpeed / 2);
         }
-    }
-
-    private void Acceleration()
-    {
-
-
     }
 
     private void Raycast()
