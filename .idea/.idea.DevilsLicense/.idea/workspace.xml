@@ -14,6 +14,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Loader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/TreasureScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Manager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -26,12 +27,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/managerDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Test Scene/WaypointChoose.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
       </list>
     </option>
   </component>
@@ -92,6 +94,9 @@
       <workItem from="1605896989308" duration="10865000" />
       <workItem from="1606146995847" duration="2983000" />
       <workItem from="1606151149552" duration="1713000" />
+      <workItem from="1606385652493" duration="864000" />
+      <workItem from="1606684136353" duration="6324000" />
+      <workItem from="1606841747237" duration="2393000" />
     </task>
     <servers />
   </component>
@@ -108,9 +113,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="911" y="177" width="1009" height="799" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605909522392" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1605493703442">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606688060422">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1605493703442" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606688060422" />
   </component>
 </project>

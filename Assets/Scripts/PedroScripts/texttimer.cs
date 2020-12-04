@@ -7,6 +7,13 @@ public class texttimer : MonoBehaviour
 {
     public Text timer;
     public float t;
+    public Manager managerGo;
+
+    void Awake()
+    {
+        managerGo = GameObject.Find("Manager").GetComponent<Manager>();
+    }
+    
     void Start()
     {
         timer = gameObject.GetComponent<Text>();
@@ -16,6 +23,6 @@ public class texttimer : MonoBehaviour
     {
         t += Time.deltaTime;
 
-        timer.text = "Elapsed Time:" + " " + t.ToString() + "\n" + "Manager.T:" + " " + Manager.T.ToString() + "\n" + "FPS:" + " " + (1/Time.deltaTime);
+        timer.text = "Elapsed Time:" + " " + t.ToString() + "\n" + "Manager.T:" + " " + Manager.T.ToString() + "\n" + "FPS:" + " " + (1/Time.deltaTime) + "\n" + "Distance:" + " " + managerGo.distance;
     }
 }

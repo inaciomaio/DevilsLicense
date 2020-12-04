@@ -12,6 +12,11 @@ public class HorizontalLight : MonoBehaviour
     private UnityEvent _prompt;
     private Manager _manager;
 
+    void Awake()
+    {
+        lightsManager = GameObject.Find("IntersectionLM").GetComponent<IntersectionLights>();
+    }
+    
     void Start()
     {
         if (GameObject.Find("Manager") != null)

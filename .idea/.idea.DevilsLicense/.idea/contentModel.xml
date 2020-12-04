@@ -104,6 +104,7 @@
           <e p="MenuButton.cs" t="Include" />
           <e p="Pause.cs" t="Include" />
           <e p="PedroScripts" t="Include">
+            <e p="DistanceSlider.cs" t="Include" />
             <e p="HorizontalLight.cs" t="Include" />
             <e p="IntersectionLights.cs" t="Include" />
             <e p="Test Scene" t="Include">
