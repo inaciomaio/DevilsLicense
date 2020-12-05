@@ -403,7 +403,7 @@ Transform:
   m_LocalScale: {x: 0.43208653, y: 0.43208653, z: 0.43208653}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!114 &128057195
 MonoBehaviour:
@@ -509,7 +509,7 @@ RectTransform:
   m_Children:
   - {fileID: 308362585}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -527,7 +527,7 @@ GameObject:
   - component: {fileID: 178968311}
   - component: {fileID: 178968312}
   m_Layer: 0
-  m_Name: IntersectionM
+  m_Name: IntersectionLM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1409,7 +1409,7 @@ Transform:
   - {fileID: 1573685475}
   - {fileID: 258225892}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &868006478 stripped
 SpriteRenderer:
@@ -1519,7 +1519,7 @@ PrefabInstance:
     - target: {fileID: 1895432185329261719, guid: 6e38eaeb4054b66409e313d448d3ea76,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1895432185329261719, guid: 6e38eaeb4054b66409e313d448d3ea76,
         type: 3}
@@ -1568,7 +1568,7 @@ Transform:
   - {fileID: 178968311}
   - {fileID: 1413719111}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1062259091 stripped
 SpriteRenderer:
@@ -1810,7 +1810,7 @@ Transform:
   m_LocalScale: {x: 0.15, y: 0.15, z: 1}
   m_Children: []
   m_Father: {fileID: 1723587769}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1216382509
 SpriteRenderer:
@@ -1919,17 +1919,17 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1723587769}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4734230772168180534, guid: a9bab0640726f5f48b729f3c92631302,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -47
       objectReference: {fileID: 0}
     - target: {fileID: 4734230772168180534, guid: a9bab0640726f5f48b729f3c92631302,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -35.42
       objectReference: {fileID: 0}
     - target: {fileID: 4734230772168180534, guid: a9bab0640726f5f48b729f3c92631302,
         type: 3}
@@ -2643,7 +2643,7 @@ Transform:
   - {fileID: 2111435126}
   - {fileID: 350754604}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1717124547
 GameObject:
@@ -2709,7 +2709,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1723587768
 GameObject:
@@ -2725,7 +2725,7 @@ GameObject:
   - component: {fileID: 1723587773}
   - component: {fileID: 1723587770}
   m_Layer: 0
-  m_Name: Car
+  m_Name: Player
   m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2742,10 +2742,9 @@ Transform:
   m_LocalPosition: {x: -47, y: -34.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2034475225}
   - {fileID: 1216382508}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1723587770
 BoxCollider2D:
@@ -2786,7 +2785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxVelocity: 30
-  Acceleration: 2
+  EnginePower: 2
   TurningSpeed: 4
   HasReachedDestination: 0
   CanDrive: 1
@@ -3042,12 +3041,6 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 8888908551571951033, guid: 16f9d3cc0e16a404da90cc6290efb088,
     type: 3}
   m_PrefabInstance: {fileID: 21863639}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2034475225 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4734230772168180534, guid: a9bab0640726f5f48b729f3c92631302,
-    type: 3}
-  m_PrefabInstance: {fileID: 1387102605}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2111435125
 PrefabInstance:
