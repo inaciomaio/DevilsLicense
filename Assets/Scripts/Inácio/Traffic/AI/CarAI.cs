@@ -14,6 +14,10 @@ public class CarAI : MonoBehaviour
 
     public float TurningSpeed = 2f;
 
+    public float BreakingPower = 5f;
+
+    public float BreakingDistance = 50f;
+
     private Vector2 destination;
 
     private Vector3 previousPosition;
@@ -21,10 +25,6 @@ public class CarAI : MonoBehaviour
     public bool HasReachedDestination;
 
     private Rigidbody2D car;
-
-    private float steerAngle;
-
-        private float wheelDistance = 20;
 
     public bool CanDrive = true;
 
@@ -49,9 +49,10 @@ public class CarAI : MonoBehaviour
      {
          Vector3 target = new Vector3(destination.x, destination.y);
          Vector3 destinationVector = target - transform.position;
-         steerAngle = Mathf.Atan2(-destinationVector.x, destinationVector.y) * Mathf.Rad2Deg;
+         float steerAngle = Mathf.Atan2(-destinationVector.x, destinationVector.y) * Mathf.Rad2Deg;
          Quaternion q = Quaternion.AngleAxis(steerAngle, Vector3.forward);
          transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * TurningSpeed);
+
      }
 
     private void MinDstToWaypoint()
@@ -66,24 +67,60 @@ public class CarAI : MonoBehaviour
     {
         if (CanDrive)
         {
+            float speed = 100 * EnginePower;
 
-               float Distance = Vector2.Distance(transform.position, destination);
-            
-               if (Vector2.Distance(transform.position, destination) < 2)
-               {
-                   transform.position += transform.up * Time.deltaTime * Vector2.Distance(transform.position, destination);
-               }
-               else transform.position += transform.up * Time.deltaTime * EnginePower;
+            float percentageOfMax = Vector2.Distance(transform.position, destination) / BreakingDistance;
+
+            percentageOfMax = Mathf.Clamp01(percentageOfMax);
+
+             speed = Mathf.Lerp(1.5f, 10, percentageOfMax);
+
+            transform.position += transform.up * Time.deltaTime * speed;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //Debug.DrawRay(transform.position, transform.up * 10);
+            //float distance = Vector2.Distance(transform.position, destination);
+            //float trueDistance = Mathf.Lerp(0, 1, distance); 
+            //float speed = 100 * EnginePower;
+            ////speed = Mathf.Lerp(5, 1, Vector2.Distance(transform.position, destination));
+            ////car.AddRelativeForce(Vector2.up * speed);
+            ////Debug.Log(speed);
+            //
+            //
+            //
+            //
+            //
+            //transform.position += transform.up * Time.deltaTime * EnginePower;
+
+            // float Distance = Vector2.Distance(transform.position, destination);
+            // 
+            // if (Vector2.Distance(transform.position, destination) < 2)
+            // {
+            //     transform.position += transform.up * Time.deltaTime * Distance;
+            // }
+            // else transform.position += transform.up * Time.deltaTime * EnginePower;
 
             //car.AddForce(transform.up * Acceleration);
             //car.drag = 4 / Vector2.Distance(transform.position, destination);
 
-            //float speed = 1 * Acceleration;
+
             //var direction = Mathf.Sign(Vector2.Dot(car.velocity, car.GetRelativeVector(Vector2.up)));
             //car.rotation += TurningSpeed * car.velocity.magnitude * direction;
-            //
-            //car.AddRelativeForce(Vector2.up * speed);
-            //car.AddRelativeForce(-Vector2.right * car.velocity.magnitude * TurningSpeed / 2);
+
         }
     }
 
