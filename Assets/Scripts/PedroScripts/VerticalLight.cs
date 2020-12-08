@@ -42,10 +42,10 @@ public class VerticalLight : MonoBehaviour
         {
             Debug.Log("Stop the car !!!");
         }
-        else if (collision.CompareTag("Car") && vcolorIm == 1)
+        else if (collision.CompareTag("Car") && vcolorIm == 1 && _manager.promptIsPossible && _manager.changeLightsIsPossible)
         {
+            //Make Prompt UI Appear
             _prompt.Invoke();
-            //Make UI Appear
         }
     }
 }

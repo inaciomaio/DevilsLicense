@@ -12,5 +12,12 @@ public class Loader : MonoBehaviour
             Instantiate(manager);
             GameObject.Find("Manager(Clone)").name = "Manager";
         }
+        else
+        {
+            Destroy(GameObject.Find("Manager"));
+            Instantiate(manager);
+            GameObject.Find("Manager(Clone)").name = "Manager";
+        }
     }
 }
+

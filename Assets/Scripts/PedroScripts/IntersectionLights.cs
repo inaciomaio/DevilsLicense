@@ -26,10 +26,13 @@ public class IntersectionLights : MonoBehaviour
     public SpriteRenderer[] horizontalLights;
     public SpriteRenderer[] verticalLights;
 
+    private Manager _manager;
+
     void Start()
     {
         greenLightSp = Resources.Load<Sprite>("Sprites/greenlight");
         redLightSp = Resources.Load<Sprite>("Sprites/redlight");
+        _manager = GameObject.Find("Manager").GetComponent<Manager>();
     }
     
     void Update()
@@ -90,6 +93,11 @@ public class IntersectionLights : MonoBehaviour
     
     public void ChangeLightsCall()
     {
+        _manager.errorCount++;
+        _manager.changeLightsIsPossible = false;
+        _manager.prompt.SetActive(false);
+        //Time.TimeScale = 1f; ???
+        
         for (int i = 0; i < horizontalLights.Length; i++)
         {
             if (hcolor == 0)

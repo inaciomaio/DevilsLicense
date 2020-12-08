@@ -42,11 +42,10 @@ public class HorizontalLight : MonoBehaviour
         {
             Debug.Log("Stop the car !!!");
         }
-        else if (collision.CompareTag("Car") && hcolorIm == 1)
+        else if (collision.CompareTag("Car") && hcolorIm == 1 && _manager.promptIsPossible && _manager.changeLightsIsPossible)
         {
-            _prompt.Invoke();
-
             //Make UI Appear
+            _prompt.Invoke();
         }
     }
 }

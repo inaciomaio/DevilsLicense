@@ -26,13 +26,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/managerDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/managerDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Test Scene/WaypointChoose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ManagerDestroyer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DistanceManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
       </list>
     </option>
@@ -97,6 +100,8 @@
       <workItem from="1606385652493" duration="864000" />
       <workItem from="1606684136353" duration="6324000" />
       <workItem from="1606841747237" duration="2393000" />
+      <workItem from="1607090501083" duration="9227000" />
+      <workItem from="1607308031296" duration="8179000" />
     </task>
     <servers />
   </component>

@@ -86,6 +86,7 @@
         <e p="Scripts" t="Include">
           <e p="DDOL.cs" t="Include" />
           <e p="Inácio" t="Include">
+            <e p="FollowPlayer.cs" t="Include" />
             <e p="InacioDebugTest.cs" t="Include" />
             <e p="Traffic" t="Include">
               <e p="AI" t="Include">
@@ -94,6 +95,9 @@
               <e p="Editor" t="Include">
                 <e p="PathEditor.cs" t="Include" />
                 <e p="PathManager.cs" t="Include" />
+              </e>
+              <e p="Signs" t="Include">
+                <e p="StopSign.cs" t="Include" />
               </e>
               <e p="Waypoint.cs" t="Include" />
               <e p="WaypointNavigator.cs" t="Include" />
@@ -107,6 +111,7 @@
             <e p="DistanceSlider.cs" t="Include" />
             <e p="HorizontalLight.cs" t="Include" />
             <e p="IntersectionLights.cs" t="Include" />
+            <e p="Sign.cs" t="Include" />
             <e p="Test Scene" t="Include">
               <e p="Speedometer.cs" t="Include" />
               <e p="test.cs" t="Include" />
