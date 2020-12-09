@@ -27,7 +27,6 @@ public class Manager : MonoBehaviour
     public GameObject destination; //Final
     public GameObject tempUi; //All UI that won't be available at game over screen
     public GameObject power1;
-    public GameObject signprompt; //Sign Prompt
 
     public int currentSceneIndex;
     void Awake()
@@ -39,10 +38,8 @@ public class Manager : MonoBehaviour
         gameOverUi = GameObject.Find("GameOverUi");
         tempUi = GameObject.Find("TempUi");
         power1 = GameObject.Find("Power1");
-        signprompt = GameObject.Find("SignPrompt");
-        
+
         prompt.SetActive(false);
-        signprompt.SetActive(false);
         gameOverUi.SetActive(false);
         
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
@@ -111,7 +108,7 @@ public class Manager : MonoBehaviour
         yield return Time.timeScale = 1f;
     }
 
-    IEnumerator SignUIPrompt()
+    /*IEnumerator SignUIPrompt()
     {
         promptIsPossible = false;
         Time.timeScale = 0.1f;
@@ -120,7 +117,7 @@ public class Manager : MonoBehaviour
         signprompt.SetActive(false);
         promptIsPossible = true;
         yield return Time.timeScale = 1f;
-    }
+    }*/
     
     //
 

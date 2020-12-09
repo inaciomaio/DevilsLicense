@@ -33,10 +33,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DistanceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
       </list>
     </option>
   </component>
@@ -102,6 +102,8 @@
       <workItem from="1606841747237" duration="2393000" />
       <workItem from="1607090501083" duration="9227000" />
       <workItem from="1607308031296" duration="8179000" />
+      <workItem from="1607485223478" duration="1761000" />
+      <workItem from="1607533219841" duration="10339000" />
     </task>
     <servers />
   </component>
