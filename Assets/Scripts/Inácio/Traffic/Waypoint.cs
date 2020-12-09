@@ -8,6 +8,19 @@ public class Waypoint : MonoBehaviour
 
     public List<Waypoint> NextWaypoints = new List<Waypoint>();
 
+    private void Start()
+    {
+        for(int i = NextWaypoints.Count - 1; i > -1; --i)
+        {
+            var f = NextWaypoints[i];
+            if(f == null)
+            {
+                NextWaypoints.Remove(f);
+            }
+        }
+
+    }
+
     public float GetDistance()
     {
         foreach(Waypoint waypoint in PreviousWaypoint.NextWaypoints)

@@ -9,7 +9,7 @@ public class CarAI : MonoBehaviour
     [Range(30, 50)]
     public int MaxVelocity = 30;
 
-    [Range(0, 5)]
+    [Range(0, 20)]
     public float EnginePower = 2f;
 
     public float TurningSpeed = 2f;
@@ -18,20 +18,20 @@ public class CarAI : MonoBehaviour
 
     public float BreakingDistance = 50f;
 
+    private Rigidbody2D car;
+
     private Vector2 destination;
 
     private Vector3 previousPosition;
 
     public bool HasReachedDestination;
 
-    private Rigidbody2D car;
-
     public bool CanDrive = true;
 
     private void Awake()
     {
-        Vector3 previousPosition = transform.position;
         car = GetComponent<Rigidbody2D>();
+        Vector3 previousPosition = transform.position;
         Physics2D.queriesStartInColliders = false;
     }
 
@@ -41,7 +41,6 @@ public class CarAI : MonoBehaviour
         AimToWaypoint();
         MinDstToWaypoint();
         Raycast();
-        //CheckWallDistance();
         Drive();
     }
 
@@ -67,18 +66,16 @@ public class CarAI : MonoBehaviour
     {
         if (CanDrive)
         {
-            float speed = 100 * EnginePower;
-
             float percentageOfMax = Vector2.Distance(transform.position, destination) / BreakingDistance;
-
+            
             percentageOfMax = Mathf.Clamp01(percentageOfMax);
-
-             speed = Mathf.Lerp(1.5f, 10, percentageOfMax);
-
+            
+            float speed = Mathf.Lerp(1.5f, 10, percentageOfMax) * EnginePower;
+            
             transform.position += transform.up * Time.deltaTime * speed;
 
 
-
+            //car.AddRelativeForce(Vector2.up * speed * Time.deltaTime);
 
 
 
@@ -126,7 +123,14 @@ public class CarAI : MonoBehaviour
 
     private void Raycast()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, 1);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, 1.5f);
+        Debug.DrawRay(transform.position, transform.up * 1.5f, Color.red);
+
+        if (hit.collider != null && hit.collider.CompareTag("Car"))
+        {
+            CanDrive = false;
+        }
+        else CanDrive = true;
 
         if (hit.collider != null && hit.collider.CompareTag("Horizontal Light"))
         {

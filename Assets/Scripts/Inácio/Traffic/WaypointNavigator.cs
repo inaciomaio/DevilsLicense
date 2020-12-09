@@ -23,8 +23,15 @@ public class WaypointNavigator : MonoBehaviour
         {
             int direction = Random.Range(0, currentWaypoint.NextWaypoints.Count);
             Debug.Log(direction);
-            currentWaypoint = currentWaypoint.NextWaypoints[direction];
-            car.SetDestination(currentWaypoint.GetPosition());
+            if (currentWaypoint.NextWaypoints.Count != 0)
+            {
+                currentWaypoint = currentWaypoint.NextWaypoints[direction];
+                car.SetDestination(currentWaypoint.GetPosition());
+            }
+            else
+            {
+                car.CanDrive = false;
+            }
         }
     }
 }
