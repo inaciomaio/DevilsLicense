@@ -15,9 +15,7 @@
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/TreasureScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Manager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -30,17 +28,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Test Scene/WaypointChoose.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ManagerDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DistanceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
       </list>
     </option>
   </component>
@@ -107,7 +103,7 @@
       <workItem from="1607090501083" duration="9227000" />
       <workItem from="1607308031296" duration="8179000" />
       <workItem from="1607485223478" duration="1761000" />
-      <workItem from="1607533219841" duration="22064000" />
+      <workItem from="1607533219841" duration="10339000" />
     </task>
     <servers />
   </component>

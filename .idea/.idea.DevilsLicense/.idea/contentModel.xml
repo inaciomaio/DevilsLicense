@@ -109,10 +109,8 @@
           <e p="Pause.cs" t="Include" />
           <e p="PedroScripts" t="Include">
             <e p="DistanceSlider.cs" t="Include" />
-            <e p="GameOverUI.cs" t="Include" />
             <e p="HorizontalLight.cs" t="Include" />
             <e p="IntersectionLights.cs" t="Include" />
-            <e p="LevelEnd.cs" t="Include" />
             <e p="Sign.cs" t="Include" />
             <e p="Test Scene" t="Include">
               <e p="Speedometer.cs" t="Include" />
