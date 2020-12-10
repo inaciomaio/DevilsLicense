@@ -24,7 +24,6 @@ public class texttimer : MonoBehaviour
         t += Time.deltaTime;
 
         timer.text = "Elapsed Time:" + " " + t.ToString() + "\n" + "Manager.T:" + " " + Manager.T.ToString() + "\n" +
-                     "FPS:" + " " + (1 / Time.deltaTime) + "\n" + "Distance:" + " " + managerGo.distance + "\n" + " " +
-                     managerGo.errorCount.ToString();
+                     "FPS:" + " " + (1 / Time.deltaTime) + "\n" + "Distance:" + " " + managerGo.distance + "\n" + "Errors:" + " " + managerGo.errorCount.ToString();
     }
 }

@@ -67,8 +67,13 @@ public class Manager : MonoBehaviour
 
         if (errorCount >= 3)
         {
-            StartCoroutine(OnGameOver());
+            OnGameOverMthd();
         }
+    }
+
+    public void OnGameOverMthd()
+    {
+        StartCoroutine(OnGameOver());
     }
     
     public void OnGreenLight()
@@ -86,16 +91,6 @@ public class Manager : MonoBehaviour
     
     //
     
-    IEnumerator OnGameOver()
-    {
-        Time.timeScale = 0;
-        tempUi.SetActive(false);
-        gameOverUi.SetActive(true);
-        yield return new WaitForSecondsRealtime(2);
-        errorCount = 0;
-        SceneManager.LoadScene(currentSceneIndex);
-    }
-
     IEnumerator GreenLightUIPrompt()
     {
         promptIsPossible = false;
@@ -125,5 +120,15 @@ public class Manager : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2); // Power cooldown (can be changed)
         yield return changeLightsIsPossible = true;
+    }
+    
+    IEnumerator OnGameOver()
+    {
+        Time.timeScale = 0;
+        tempUi.SetActive(false);
+        gameOverUi.SetActive(true);
+        yield return new WaitForSecondsRealtime(180);
+        errorCount = 0;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 }
