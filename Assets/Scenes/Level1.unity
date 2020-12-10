@@ -2645,7 +2645,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 67.68, y: 29.81}
+  m_AnchoredPosition: {x: 67.67829, y: 29.811417}
   m_SizeDelta: {x: 193.84265, y: 132.35094}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697775454
@@ -12783,7 +12783,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PreviousWaypoint: {fileID: 0}
-  NextWaypoints: []
+  NextWaypoints:
+  - {fileID: 4649943809535086819}
 --- !u!4 &4649943809270108678
 Transform:
   m_ObjectHideFlags: 0
