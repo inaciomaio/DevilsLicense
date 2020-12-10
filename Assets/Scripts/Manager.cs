@@ -118,7 +118,7 @@ public class Manager : MonoBehaviour
 
     IEnumerator ChangeLightsCooldown()  
     {
-        yield return new WaitForSecondsRealtime(2); // Power cooldown (can be changed)
+        yield return new WaitForSecondsRealtime(10); // Power cooldown (can be changed)
         yield return changeLightsIsPossible = true;
     }
     
