@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1742026936995872485}
   m_Layer: 0
   m_Name: DummyCar (5)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 1742026937021957342}
   m_Layer: 0
   m_Name: DummyCar (35)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 1742026937050718683}
   m_Layer: 0
   m_Name: DummyCar (38)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 1742026937068701907}
   m_Layer: 0
   m_Name: DummyCar (8)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 1742026937184270237}
   m_Layer: 0
   m_Name: DummyCar (1)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -836,7 +836,7 @@ GameObject:
   - component: {fileID: 1742026937197424119}
   m_Layer: 0
   m_Name: DummyCar (18)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 1742026937252642090}
   m_Layer: 0
   m_Name: DummyCar (32)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1164,7 +1164,7 @@ GameObject:
   - component: {fileID: 1742026937288661796}
   m_Layer: 0
   m_Name: DummyCar (6)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1328,7 +1328,7 @@ GameObject:
   - component: {fileID: 1742026937321203670}
   m_Layer: 0
   m_Name: DummyCar (19)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1492,7 +1492,7 @@ GameObject:
   - component: {fileID: 1742026937330647147}
   m_Layer: 0
   m_Name: DummyCar (33)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1656,7 +1656,7 @@ GameObject:
   - component: {fileID: 1742026937346659072}
   m_Layer: 0
   m_Name: DummyCar (46)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1820,7 +1820,7 @@ GameObject:
   - component: {fileID: 1742026937422468581}
   m_Layer: 0
   m_Name: DummyCar (27)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1984,7 +1984,7 @@ GameObject:
   - component: {fileID: 1742026937632136307}
   m_Layer: 0
   m_Name: DummyCar (12)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2148,7 +2148,7 @@ GameObject:
   - component: {fileID: 1742026937666485000}
   m_Layer: 0
   m_Name: DummyCar (17)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2312,7 +2312,7 @@ GameObject:
   - component: {fileID: 1742026937769759404}
   m_Layer: 0
   m_Name: DummyCar (13)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2476,7 +2476,7 @@ GameObject:
   - component: {fileID: 1742026937839557500}
   m_Layer: 0
   m_Name: DummyCar (16)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2640,7 +2640,7 @@ GameObject:
   - component: {fileID: 1742026937841537300}
   m_Layer: 0
   m_Name: DummyCar (45)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2804,7 +2804,7 @@ GameObject:
   - component: {fileID: 1742026937893785892}
   m_Layer: 0
   m_Name: DummyCar (9)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2968,7 +2968,7 @@ GameObject:
   - component: {fileID: 1742026937899657299}
   m_Layer: 0
   m_Name: DummyCar (14)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3132,7 +3132,7 @@ GameObject:
   - component: {fileID: 1742026937942593110}
   m_Layer: 0
   m_Name: DummyCar (43)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3296,7 +3296,7 @@ GameObject:
   - component: {fileID: 1742026937976985876}
   m_Layer: 0
   m_Name: DummyCar (44)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3460,7 +3460,7 @@ GameObject:
   - component: {fileID: 1742026938067339131}
   m_Layer: 0
   m_Name: DummyCar (23)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3624,7 +3624,7 @@ GameObject:
   - component: {fileID: 1742026938132924541}
   m_Layer: 0
   m_Name: DummyCar (37)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3788,7 +3788,7 @@ GameObject:
   - component: {fileID: 1742026938153303892}
   m_Layer: 0
   m_Name: DummyCar (20)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3952,7 +3952,7 @@ GameObject:
   - component: {fileID: 1742026938277444686}
   m_Layer: 0
   m_Name: DummyCar (7)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4116,7 +4116,7 @@ GameObject:
   - component: {fileID: 1742026938337559986}
   m_Layer: 0
   m_Name: DummyCar (29)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4280,7 +4280,7 @@ GameObject:
   - component: {fileID: 1742026938364061269}
   m_Layer: 0
   m_Name: DummyCar (3)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4444,7 +4444,7 @@ GameObject:
   - component: {fileID: 1742026938384496174}
   m_Layer: 0
   m_Name: DummyCar (31)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4608,7 +4608,7 @@ GameObject:
   - component: {fileID: 1742026938421767812}
   m_Layer: 0
   m_Name: DummyCar (2)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4772,7 +4772,7 @@ GameObject:
   - component: {fileID: 1742026938483052093}
   m_Layer: 0
   m_Name: DummyCar (21)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4936,7 +4936,7 @@ GameObject:
   - component: {fileID: 1742026938539252662}
   m_Layer: 0
   m_Name: DummyCar (11)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5094,7 +5094,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1742026938606262373}
   m_Layer: 0
-  m_Name: Cars
+  m_Name: TestCars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5178,7 +5178,7 @@ GameObject:
   - component: {fileID: 1742026938647019752}
   m_Layer: 0
   m_Name: DummyCar (15)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5342,7 +5342,7 @@ GameObject:
   - component: {fileID: 1742026938706294029}
   m_Layer: 0
   m_Name: DummyCar (40)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5506,7 +5506,7 @@ GameObject:
   - component: {fileID: 1742026938720344634}
   m_Layer: 0
   m_Name: DummyCar (22)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5670,7 +5670,7 @@ GameObject:
   - component: {fileID: 1742026938746399683}
   m_Layer: 0
   m_Name: DummyCar (39)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5834,7 +5834,7 @@ GameObject:
   - component: {fileID: 1742026938781712732}
   m_Layer: 0
   m_Name: DummyCar (24)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5998,7 +5998,7 @@ GameObject:
   - component: {fileID: 1742026938825338686}
   m_Layer: 0
   m_Name: DummyCar (47)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6162,7 +6162,7 @@ GameObject:
   - component: {fileID: 1742026938838006493}
   m_Layer: 0
   m_Name: DummyCar (28)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6326,7 +6326,7 @@ GameObject:
   - component: {fileID: 1742026938881369504}
   m_Layer: 0
   m_Name: DummyCar
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6490,7 +6490,7 @@ GameObject:
   - component: {fileID: 1742026938901453710}
   m_Layer: 0
   m_Name: DummyCar (25)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6654,7 +6654,7 @@ GameObject:
   - component: {fileID: 1742026938910248157}
   m_Layer: 0
   m_Name: DummyCar (26)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6818,7 +6818,7 @@ GameObject:
   - component: {fileID: 1742026938918577000}
   m_Layer: 0
   m_Name: DummyCar (34)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6981,7 +6981,7 @@ GameObject:
   - component: {fileID: 1742026938919446703}
   m_Layer: 0
   m_Name: DummyCar (36)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7095,7 +7095,7 @@ GameObject:
   - component: {fileID: 1742026938923543448}
   m_Layer: 0
   m_Name: DummyCar (30)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7259,7 +7259,7 @@ GameObject:
   - component: {fileID: 1742026939045992152}
   m_Layer: 0
   m_Name: DummyCar (10)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7423,7 +7423,7 @@ GameObject:
   - component: {fileID: 1742026939103789338}
   m_Layer: 0
   m_Name: DummyCar (41)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7587,7 +7587,7 @@ GameObject:
   - component: {fileID: 1742026939122148272}
   m_Layer: 0
   m_Name: DummyCar (42)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7751,7 +7751,7 @@ GameObject:
   - component: {fileID: 1742026939129554164}
   m_Layer: 0
   m_Name: DummyCar (4)
-  m_TagString: Car
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -126,7 +126,7 @@ public class CarAI : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, 1.5f);
         Debug.DrawRay(transform.position, transform.up * 1.5f, Color.red);
 
-        if (hit.collider != null && hit.collider.CompareTag("Car"))
+        if (hit.collider != null && hit.collider.CompareTag("Car") || hit.collider != null && hit.collider.CompareTag("Player"))
         {
             CanDrive = false;
         }
