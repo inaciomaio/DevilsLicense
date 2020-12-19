@@ -42,6 +42,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/CrosswalkSign.cs" />
       </list>
     </option>
   </component>
@@ -112,6 +113,7 @@
       <workItem from="1607566141666" duration="1238000" />
       <workItem from="1607567396150" duration="1214000" />
       <workItem from="1607598061677" duration="26000" />
+      <workItem from="1608349990787" duration="2393000" />
     </task>
     <servers />
   </component>
