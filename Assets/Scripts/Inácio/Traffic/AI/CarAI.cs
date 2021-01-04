@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class CarAI : MonoBehaviour
 {
-    private float currentVelocity;
 
-    [Range(30, 50)]
-    public int MaxVelocity = 30;
+    [Range(30, 85)]
+    public int MaxVelocity = 85;
 
-    [Range(0, 20)]
+    [Range(0, 5)]
     public float EnginePower = 2f;
 
     public float TurningSpeed = 2f;
@@ -17,6 +16,8 @@ public class CarAI : MonoBehaviour
     public float BreakingPower = 5f;
 
     public float BreakingDistance = 50f;
+
+    public float CurrentVelocity;
 
     private Rigidbody2D car;
 
@@ -37,7 +38,7 @@ public class CarAI : MonoBehaviour
 
     private void Update()
     {
-        //MeasureVelocity();
+        MeasureVelocity();
         AimToWaypoint();
         MinDstToWaypoint();
         Raycast();
@@ -121,6 +122,7 @@ public class CarAI : MonoBehaviour
         }
     }
 
+
     private void Raycast()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, 1.5f);
@@ -154,9 +156,8 @@ public class CarAI : MonoBehaviour
 
     private void MeasureVelocity()
     {
-        currentVelocity = ((transform.position - previousPosition).magnitude) * 3 / Time.deltaTime;
+        CurrentVelocity = ((transform.position - previousPosition).magnitude) * 3 / Time.deltaTime;
         previousPosition = transform.position;
-        Debug.Log(currentVelocity);
     }
 
     public void SetDestination(Vector2 destination)
