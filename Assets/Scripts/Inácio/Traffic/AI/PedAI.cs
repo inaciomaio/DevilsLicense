@@ -5,7 +5,8 @@ using UnityEngine.AI;
 
 public class PedAI : MonoBehaviour
 {
-    public NavMeshAgent agent;
+    private PedDestinationManager manager;
+    public NavMeshAgent Agent;
 
     // Start is called before the first frame update
     void Start()
