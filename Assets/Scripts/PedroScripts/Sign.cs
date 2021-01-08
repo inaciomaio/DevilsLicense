@@ -11,7 +11,7 @@ using UnityEngine.Events;
  * Right (Id=3)
  * 30 (Id=4)
  * 50 (Id=5)
- * 
+ * Crosswalk (Id=6)
  */
 
 public class Sign : MonoBehaviour
@@ -28,6 +28,7 @@ public class Sign : MonoBehaviour
     public Sprite stopspr;
     public Sprite speed30spr;
     public Sprite speed50spr;
+    public Sprite cwspr;
 
     public GameObject StopWheel;
     //Other objects
@@ -58,6 +59,7 @@ public class Sign : MonoBehaviour
         stopspr = Resources.Load<Sprite>("Sprites/sinal-stop");
         speed30spr = Resources.Load<Sprite>("Sprites/sinal-limite30");
         speed50spr = Resources.Load<Sprite>("Sprites/sinal-limite50");
+        cwspr = Resources.Load<Sprite>("Sprites/sinal-passadeira");
     }
 
     void Update()
@@ -81,6 +83,9 @@ public class Sign : MonoBehaviour
                 break;
             case 5:
                 _sR.sprite = speed50spr;
+                break;
+            case 6:
+                _sR.sprite = cwspr;
                 break;
         }
 
@@ -120,10 +125,7 @@ public class Sign : MonoBehaviour
 
     public void OnButtonClick()
     {
-        if (signId == 0)
-        {
-            StartCoroutine(StopWheelCR());
-        }
+        StartCoroutine(StopWheelCR());
     }
 
     public void LeftButtonClicked()
@@ -147,6 +149,31 @@ public class Sign : MonoBehaviour
         Time.timeScale = 1f;
     }
     
+    public void FiftyButtonClicked()
+    {
+        signId = 5;
+        _manager.promptIsPossible = true;
+        Time.timeScale = 1f;
+    }
+
+    public void ThirtyButtonClicked()
+    {
+        signId = 4;
+        _manager.promptIsPossible = true;
+    }
+
+    public void CwButtonClicked()
+    {
+        signId = 6;
+        _manager.promptIsPossible = true;
+    }
+
+    public void StopButtonClicked()
+    {
+        signId = 0;
+        _manager.promptIsPossible = true;
+    }
+
     IEnumerator StopWheelCR()
     {
         _manager.promptIsPossible = false;

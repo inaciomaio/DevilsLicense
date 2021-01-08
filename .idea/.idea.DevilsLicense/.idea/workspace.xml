@@ -37,12 +37,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/CrosswalkSign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +114,7 @@
       <workItem from="1607567396150" duration="1214000" />
       <workItem from="1607598061677" duration="26000" />
       <workItem from="1608349990787" duration="2393000" />
+      <workItem from="1610111852225" duration="5448000" />
     </task>
     <servers />
   </component>

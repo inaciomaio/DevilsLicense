@@ -8,6 +8,30 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Dependencies" t="Include">
+          <e p="NavMeshPlus-master" t="Include">
+            <e p="NavMeshComponents" t="Include">
+              <e p="Editor" t="Include">
+                <e p="NavMeshAssetManager.cs" t="Include" />
+                <e p="NavMeshAssetManager2d.cs" t="Include" />
+                <e p="NavMeshComponentsEditor.asmdef" t="Include" />
+                <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+                <e p="NavMeshLinkEditor.cs" t="Include" />
+                <e p="NavMeshModifierEditor.cs" t="Include" />
+                <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+                <e p="NavMeshSurfaceEditor.cs" t="Include" />
+                <e p="NavMeshSurfaceEditor2d.cs" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="NavMeshBuilder2d.cs" t="Include" />
+                <e p="NavMeshComponents.asmdef" t="Include" />
+                <e p="NavMeshLink.cs" t="Include" />
+                <e p="NavMeshModifier.cs" t="Include" />
+                <e p="NavMeshModifierVolume.cs" t="Include" />
+                <e p="NavMeshSurface.cs" t="Include" />
+                <e p="NavMeshSurface2d.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="TextMesh Pro" t="Include">
             <e p="Examples &amp; Extras" t="Include">
               <e p="Fonts" t="Include">
@@ -83,14 +107,17 @@
             </e>
           </e>
         </e>
+        <e p="PedDestinationManager.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="DDOL.cs" t="Include" />
           <e p="Inácio" t="Include">
+            <e p="DisableRoadBakingColliders.cs" t="Include" />
             <e p="FollowPlayer.cs" t="Include" />
             <e p="InacioDebugTest.cs" t="Include" />
             <e p="Traffic" t="Include">
               <e p="AI" t="Include">
                 <e p="CarAI.cs" t="Include" />
+                <e p="PedAI.cs" t="Include" />
               </e>
               <e p="Editor" t="Include">
                 <e p="PathEditor.cs" t="Include" />
@@ -108,6 +135,7 @@
           <e p="MenuButton.cs" t="Include" />
           <e p="Pause.cs" t="Include" />
           <e p="PedroScripts" t="Include">
+            <e p="CrosswalkPed.cs" t="Include" />
             <e p="CrosswalkSign.cs" t="Include" />
             <e p="DistanceSlider.cs" t="Include" />
             <e p="GameOverUI.cs" t="Include" />
@@ -125,6 +153,8 @@
         </e>
       </e>
       <e p="DevilsLicense.sln" t="IncludeFlat" />
+      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
+      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
