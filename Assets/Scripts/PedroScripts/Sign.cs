@@ -131,6 +131,7 @@ public class Sign : MonoBehaviour
     public void LeftButtonClicked()
     {
         signId = 1;
+        StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
     }
@@ -138,6 +139,7 @@ public class Sign : MonoBehaviour
     public void ForwardButtonClicked()
     {
         signId = 2;
+        StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
     }
@@ -145,6 +147,7 @@ public class Sign : MonoBehaviour
     public void RightButtonClicked()
     {
         signId = 3;
+        StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
     }
@@ -152,6 +155,7 @@ public class Sign : MonoBehaviour
     public void FiftyButtonClicked()
     {
         signId = 5;
+        StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
     }
@@ -159,19 +163,25 @@ public class Sign : MonoBehaviour
     public void ThirtyButtonClicked()
     {
         signId = 4;
+        StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
+        Time.timeScale = 1f;
     }
 
     public void CwButtonClicked()
     {
         signId = 6;
+        StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
+        Time.timeScale = 1f;
     }
 
     public void StopButtonClicked()
     {
         signId = 0;
+        StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
+        Time.timeScale = 1f;
     }
 
     IEnumerator StopWheelCR()
