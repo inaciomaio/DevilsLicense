@@ -13,7 +13,6 @@ public class PedAI : MonoBehaviour
     {
         manager = FindObjectOfType<PedDestinationManager>();
         agent = transform.GetComponent<NavMeshAgent>();
-        agent.stoppingDistance = Random.Range(.3f, 1f);
 
 
         // Update is called once per frame
@@ -24,6 +23,8 @@ public class PedAI : MonoBehaviour
         
         if(CurrentDestinationTransform == null)
         {
+            agent.stoppingDistance = Random.Range(.3f, 1f);
+            agent.speed = Random.Range(2, 4);
             var index = GenerateNewIndex();
             CurrentDestinationTransform = manager.Destinations[index];
             agent.SetDestination(CurrentDestinationTransform.position);
@@ -36,6 +37,7 @@ public class PedAI : MonoBehaviour
         if(Vector3.Distance(transform.position, manager.Destinations[DestinationIndex].position) <= agent.stoppingDistance)
         {
             var index = GenerateNewIndex();
+            CurrentDestinationTransform = manager.Destinations[index];
             agent.SetDestination(manager.Destinations[index].position);
             agent.stoppingDistance = Random.Range(.3f, 1f);
 

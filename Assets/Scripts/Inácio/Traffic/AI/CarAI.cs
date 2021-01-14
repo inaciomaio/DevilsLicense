@@ -79,17 +79,6 @@ public class CarAI : MonoBehaviour
             //car.AddRelativeForce(Vector2.up * speed * Time.deltaTime);
 
 
-
-
-
-
-
-
-
-
-
-
-
             //Debug.DrawRay(transform.position, transform.up * 10);
             //float distance = Vector2.Distance(transform.position, destination);
             //float trueDistance = Mathf.Lerp(0, 1, distance); 
@@ -158,6 +147,7 @@ public class CarAI : MonoBehaviour
     {
         CurrentVelocity = ((transform.position - previousPosition).magnitude) * 3 / Time.deltaTime;
         previousPosition = transform.position;
+        Debug.Log("Speed " + CurrentVelocity);
     }
 
     public void SetDestination(Vector2 destination)
