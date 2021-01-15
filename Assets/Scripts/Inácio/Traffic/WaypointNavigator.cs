@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class WaypointNavigator : MonoBehaviour
 {
@@ -21,12 +19,13 @@ public class WaypointNavigator : MonoBehaviour
     {
         if (car.HasReachedDestination)
         {
-            int direction = Random.Range(0, currentWaypoint.NextWaypoints.Count);
-            Debug.Log(direction);
             if (currentWaypoint.NextWaypoints.Count != 0)
             {
+                int direction = Random.Range(0, currentWaypoint.NextWaypoints.Count);
+                //Debug.Log(direction);
                 currentWaypoint = currentWaypoint.NextWaypoints[direction];
                 car.SetDestination(currentWaypoint.GetPosition());
+                car.SetSpeed(currentWaypoint.TargetSpeed);
             }
             else
             {

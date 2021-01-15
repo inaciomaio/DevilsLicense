@@ -33,6 +33,18 @@ public class Sign : MonoBehaviour
     public GameObject StopWheel;
     //Other objects
 
+    private WaypointNavigator navigator;
+    private CarAI car;
+
+    [Header("TurnSign Properties")]
+    public Waypoint currentWaypointForward;
+    public Waypoint currentWaypointLeft;
+    public Waypoint currentWaypointRight;
+    public bool CanNPCsUseForward;
+    public bool CanNPCsUseLeft;     
+    public bool CanNPCsUseRight;
+
+
     void Awake()
     {
         StopWheel.SetActive(false);
@@ -97,21 +109,81 @@ public class Sign : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Car") && _manager.promptIsPossible)
+        if (_manager.promptIsPossible)
         {
             switch (signId)
             {
                 case 0:
-                    //Stop function
+                    //Stop sign Function
+                    if (collision.CompareTag("Car") || collision.CompareTag("Player"))
+                    {
+                        navigator = collision.GetComponent<WaypointNavigator>();
+                        car = collision.GetComponent<CarAI>();
+                        car.CanDrive = false;
+                        StartCoroutine("Stop");
+                    }
                     break;
                 case 1:
-                    //Left function
+                    //TurnLeft sign Function
+                    if (CanNPCsUseLeft && currentWaypointLeft != null)
+                    {
+                        if (collision.CompareTag("Car") || collision.CompareTag("Player"))
+                        {
+                            navigator = collision.GetComponent<WaypointNavigator>();
+                            car = collision.GetComponent<CarAI>();
+                            navigator.currentWaypoint = currentWaypointLeft;
+                            car.SetDestination(currentWaypointLeft.GetPosition());
+                        }
+
+                    }
+                    else if (collision.CompareTag("Player") && currentWaypointLeft != null)
+                    {
+                        navigator = collision.GetComponent<WaypointNavigator>();
+                        car = collision.GetComponent<CarAI>();
+                        navigator.currentWaypoint = currentWaypointLeft;
+                        car.SetDestination(currentWaypointLeft.GetPosition());
+                    }
                     break;
                 case 2:
-                    //Forward function
+                    if (CanNPCsUseForward && currentWaypointForward != null)
+                    {
+                        if (collision.CompareTag("Car") || collision.CompareTag("Player"))
+                        {
+                            navigator = collision.GetComponent<WaypointNavigator>();
+                            car = collision.GetComponent<CarAI>();
+                            navigator.currentWaypoint = currentWaypointForward;
+                            car.SetDestination(currentWaypointForward.GetPosition());
+                        }
+
+                    }
+                    else if (collision.CompareTag("Player") && currentWaypointForward != null)
+                    {
+                        navigator = collision.GetComponent<WaypointNavigator>();
+                        car = collision.GetComponent<CarAI>();
+                        navigator.currentWaypoint = currentWaypointForward;
+                        car.SetDestination(currentWaypointForward.GetPosition());
+                    }
                     break;
                 case 3:
-                    //Right function
+                    //TurnRight sign Function
+                    if (CanNPCsUseRight && currentWaypointRight != null)
+                    {
+                        if (collision.CompareTag("Car") || collision.CompareTag("Player"))
+                        {
+                            navigator = collision.GetComponent<WaypointNavigator>();
+                            car = collision.GetComponent<CarAI>();
+                            navigator.currentWaypoint = currentWaypointRight;
+                            car.SetDestination(currentWaypointRight.GetPosition());
+                        }
+
+                    }
+                    else if (collision.CompareTag("Player") && currentWaypointRight != null)
+                    {
+                        navigator = collision.GetComponent<WaypointNavigator>();
+                        car = collision.GetComponent<CarAI>();
+                        navigator.currentWaypoint = currentWaypointRight;
+                        car.SetDestination(currentWaypointRight.GetPosition());
+                    }
                     break;
                 case 4:
                     //30speed function
@@ -193,5 +265,12 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         yield return Time.timeScale = 1f;
+    }
+
+    //Required for StopSign
+    private IEnumerator Stop()
+    {
+        yield return new WaitForSeconds(5);
+        car.CanDrive = true;
     }
 }

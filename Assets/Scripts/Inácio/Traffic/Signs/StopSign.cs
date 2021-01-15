@@ -12,9 +12,13 @@ public class StopSign : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        car = collision.GetComponent<CarAI>();
-        car.CanDrive = false;
-        StartCoroutine("Stop");
+
+        if (collision.CompareTag("Player") || collision.CompareTag("Car"))
+        {
+            car = collision.GetComponent<CarAI>();
+            car.CanDrive = false;
+            StartCoroutine("Stop");
+        }
     }
 
     private IEnumerator Stop()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-    public Waypoint PreviousWaypoint;
+    public float TargetSpeed;
 
     public List<Waypoint> NextWaypoints = new List<Waypoint>();
 
@@ -19,17 +19,11 @@ public class Waypoint : MonoBehaviour
             }
         }
 
-    }
-
-    public float GetDistance()
-    {
-        foreach(Waypoint waypoint in PreviousWaypoint.NextWaypoints)
+        if(TargetSpeed == 0)
         {
-            return Vector2.Distance(PreviousWaypoint.transform.position, waypoint.transform.position);
+            TargetSpeed = 8.333333333f;
         }
 
-        return 0;
-        
     }
 
     public Vector2 GetPosition()

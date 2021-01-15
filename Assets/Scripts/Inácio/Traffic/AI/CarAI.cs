@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class CarAI : MonoBehaviour
 {
-
-    [Range(30, 85)]
-    public int MaxVelocity = 85;
+    private WaypointNavigator navigator;
 
     [Range(0, 5)]
     public float EnginePower = 2f;
 
-    public float TurningSpeed = 2f;
+    public float TurningSpeed = 3f;
 
     public float BreakingPower = 5f;
 
@@ -19,7 +17,7 @@ public class CarAI : MonoBehaviour
 
     public float CurrentVelocity;
 
-    private Rigidbody2D car;
+    private float speed;
 
     private Vector2 destination;
 
@@ -31,9 +29,10 @@ public class CarAI : MonoBehaviour
 
     private void Awake()
     {
-        car = GetComponent<Rigidbody2D>();
+        navigator = GetComponent<WaypointNavigator>();
         Vector3 previousPosition = transform.position;
         Physics2D.queriesStartInColliders = false;
+        speed = 15;
     }
 
     private void Update()
@@ -47,31 +46,39 @@ public class CarAI : MonoBehaviour
 
      private void AimToWaypoint()
      {
-         Vector3 target = new Vector3(destination.x, destination.y);
-         Vector3 destinationVector = target - transform.position;
-         float steerAngle = Mathf.Atan2(-destinationVector.x, destinationVector.y) * Mathf.Rad2Deg;
-         Quaternion q = Quaternion.AngleAxis(steerAngle, Vector3.forward);
-         transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * TurningSpeed);
+        if (CanDrive)
+        {
+            Vector3 target = new Vector3(destination.x, destination.y);
+            Vector3 destinationVector = target - transform.position;
+            float steerAngle = Mathf.Atan2(-destinationVector.x, destinationVector.y) * Mathf.Rad2Deg;
+            Quaternion q = Quaternion.AngleAxis(steerAngle, Vector3.forward);
+            transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * TurningSpeed);
+        }
 
      }
 
     private void MinDstToWaypoint()
     {
-        if (Vector2.Distance(transform.position, destination) < .5f)
+        if (Vector2.Distance(transform.position, destination) < 1f)
         {
             HasReachedDestination = true;
         }
+    }
+
+    public void SetSpeed(float speed)
+    {
+        this.speed = speed;
     }
 
     private void Drive()
     {
         if (CanDrive)
         {
-            float percentageOfMax = Vector2.Distance(transform.position, destination) / BreakingDistance;
+            //float percentageOfMax = Vector2.Distance(transform.position, destination) / BreakingDistance;
             
-            percentageOfMax = Mathf.Clamp01(percentageOfMax);
+            //percentageOfMax = Mathf.Clamp01(percentageOfMax);
             
-            float speed = Mathf.Lerp(1.5f, 10, percentageOfMax) * EnginePower;
+            //float speed = Mathf.Lerp(1.5f, 10, percentageOfMax) * EnginePower;
             
             transform.position += transform.up * Time.deltaTime * speed;
 

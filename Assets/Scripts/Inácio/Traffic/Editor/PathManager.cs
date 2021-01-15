@@ -22,7 +22,7 @@ public class PathManager : EditorWindow
 
         if (WaypointRoot == null)
         {
-            EditorGUILayout.HelpBox("Root must be selected you fucking retard", MessageType.Warning);
+            EditorGUILayout.HelpBox("A Root must be selected.", MessageType.Warning);
         }
         else
         {
@@ -48,15 +48,6 @@ public class PathManager : EditorWindow
         waypointObject.transform.SetParent(WaypointRoot, false);
 
         Waypoint waypoint = waypointObject.GetComponent<Waypoint>();
-        if (WaypointRoot.childCount > 1)
-        {
-            waypoint.PreviousWaypoint = WaypointRoot.GetChild(WaypointRoot.childCount - 2).GetComponent<Waypoint>();
-            waypoint.PreviousWaypoint.NextWaypoints[waypoint.PreviousWaypoint.NextWaypoints.Count - 1] = waypoint;
-
-            waypoint.transform.position = waypoint.PreviousWaypoint.transform.position;
-            waypoint.transform.forward = waypoint.PreviousWaypoint.transform.forward;
-        }
-
         Selection.activeGameObject = waypoint.gameObject;
     }
 }
