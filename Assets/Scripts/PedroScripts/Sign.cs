@@ -44,6 +44,10 @@ public class Sign : MonoBehaviour
     public bool CanNPCsUseLeft;     
     public bool CanNPCsUseRight;
 
+    //[Header("ChangeRoadTargetSpeed Properties")]
+    //public bool Thirty;
+    //public List<Waypoint> WaypointsToChange = new List<Waypoint>();
+
 
     void Awake()
     {
@@ -106,19 +110,21 @@ public class Sign : MonoBehaviour
             signId = 0;
         }
     }
-    
+
+
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (_manager.promptIsPossible)
         {
+            car = collision.GetComponent<CarAI>();
             switch (signId)
             {
                 case 0:
                     //Stop sign Function
                     if (collision.CompareTag("Car") || collision.CompareTag("Player"))
                     {
-                        navigator = collision.GetComponent<WaypointNavigator>();
-                        car = collision.GetComponent<CarAI>();
+                        navigator = collision.GetComponent<WaypointNavigator>();    
                         car.CanDrive = false;
                         StartCoroutine("Stop");
                     }
@@ -130,7 +136,6 @@ public class Sign : MonoBehaviour
                         if (collision.CompareTag("Car") || collision.CompareTag("Player"))
                         {
                             navigator = collision.GetComponent<WaypointNavigator>();
-                            car = collision.GetComponent<CarAI>();
                             navigator.currentWaypoint = currentWaypointLeft;
                             car.SetDestination(currentWaypointLeft.GetPosition());
                         }
@@ -139,7 +144,6 @@ public class Sign : MonoBehaviour
                     else if (collision.CompareTag("Player") && currentWaypointLeft != null)
                     {
                         navigator = collision.GetComponent<WaypointNavigator>();
-                        car = collision.GetComponent<CarAI>();
                         navigator.currentWaypoint = currentWaypointLeft;
                         car.SetDestination(currentWaypointLeft.GetPosition());
                     }
@@ -150,7 +154,6 @@ public class Sign : MonoBehaviour
                         if (collision.CompareTag("Car") || collision.CompareTag("Player"))
                         {
                             navigator = collision.GetComponent<WaypointNavigator>();
-                            car = collision.GetComponent<CarAI>();
                             navigator.currentWaypoint = currentWaypointForward;
                             car.SetDestination(currentWaypointForward.GetPosition());
                         }
@@ -159,7 +162,6 @@ public class Sign : MonoBehaviour
                     else if (collision.CompareTag("Player") && currentWaypointForward != null)
                     {
                         navigator = collision.GetComponent<WaypointNavigator>();
-                        car = collision.GetComponent<CarAI>();
                         navigator.currentWaypoint = currentWaypointForward;
                         car.SetDestination(currentWaypointForward.GetPosition());
                     }
@@ -171,7 +173,6 @@ public class Sign : MonoBehaviour
                         if (collision.CompareTag("Car") || collision.CompareTag("Player"))
                         {
                             navigator = collision.GetComponent<WaypointNavigator>();
-                            car = collision.GetComponent<CarAI>();
                             navigator.currentWaypoint = currentWaypointRight;
                             car.SetDestination(currentWaypointRight.GetPosition());
                         }
@@ -180,20 +181,28 @@ public class Sign : MonoBehaviour
                     else if (collision.CompareTag("Player") && currentWaypointRight != null)
                     {
                         navigator = collision.GetComponent<WaypointNavigator>();
-                        car = collision.GetComponent<CarAI>();
                         navigator.currentWaypoint = currentWaypointRight;
                         car.SetDestination(currentWaypointRight.GetPosition());
                     }
                     break;
                 case 4:
-                    //30speed function
+                    car.TargetSpeed = 5f;
                     break;
                 case 5:
-                    //50speed function
+                    car.TargetSpeed = 8.3333333f;
                     break;
             }
         }
     }
+
+   //ALTERNATIVE WAY 
+   // public void ChangeSpeed(float speed)
+   // {
+   //     foreach (var Waypoint in WaypointsToChange)
+   //     {
+   //         Waypoint.TargetSpeed = speed;a
+   //     }
+   // }
 
     public void OnButtonClick()
     {

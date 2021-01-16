@@ -25,7 +25,7 @@ public class WaypointNavigator : MonoBehaviour
                 //Debug.Log(direction);
                 currentWaypoint = currentWaypoint.NextWaypoints[direction];
                 car.SetDestination(currentWaypoint.GetPosition());
-                car.SetSpeed(currentWaypoint.TargetSpeed);
+                //car.SetSpeed(currentWaypoint.TargetSpeed);
             }
             else
             {

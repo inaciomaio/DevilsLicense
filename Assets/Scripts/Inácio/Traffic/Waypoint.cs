@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Waypoint : MonoBehaviour
 {
-    public float TargetSpeed;
+    //public float TargetSpeed;
 
     public List<Waypoint> NextWaypoints = new List<Waypoint>();
 
@@ -19,10 +19,10 @@ public class Waypoint : MonoBehaviour
             }
         }
 
-        if(TargetSpeed == 0)
-        {
-            TargetSpeed = 8.333333333f;
-        }
+        //if(TargetSpeed == 0)
+        //{
+        //    TargetSpeed = 8.333333333f;
+        //}
 
     }
 

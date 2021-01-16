@@ -8,6 +8,8 @@ TagManager:
   - Entry
   - Horizontal Light
   - Vertical Light
+  - Ped
+  - Crosswalk
   layers:
   - Default
   - TransparentFX
