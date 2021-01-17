@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Diagnostics.Eventing.Reader;
 using System.Net.Mime;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityScript.Scripting.Pipeline;
 using Image = UnityEngine.UI.Image;
 
 public class Options : MonoBehaviour
@@ -13,22 +15,47 @@ public class Options : MonoBehaviour
     public GameObject Exit;
     public GameObject optionsObj;
     public GameObject fsCheck;
+    public GameObject volumeSlider;
+
+    public TMPro.TMP_Dropdown resolutionDropdown;
+
+    public Resolution[] resolutions;
 
     public bool toggleActive = true;
     public bool hasClicked;
-
-    public bool isFs;
     void Awake()
     {
         Logo = GameObject.Find("logo");
         Start = GameObject.Find("Start");
         Exit = GameObject.Find("Exit");
+        volumeSlider = GameObject.Find("VolumeSlider");
         optionsObj = GameObject.Find("Optionsimage");
+        volumeSlider.SetActive(false);
         optionsObj.SetActive(false);
-        fsCheck.SetActive(Screen.fullScreen);
 
-        isFs = Screen.fullScreen;
-}
+        resolutions = Screen.resolutions;
+
+        resolutionDropdown.ClearOptions();
+
+        int currentResolutionIndex = 0;
+
+        List<string> options = new List<string>();
+
+        for (int i = 0; i < resolutions.Length; i++)
+        {
+            string option = resolutions[i].width + "x" + resolutions[i].height;
+            options.Add(option);
+
+            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            {
+                currentResolutionIndex = i;
+            }
+        }
+
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.value = currentResolutionIndex;
+        resolutionDropdown.RefreshShownValue();
+    }
 
     public void ToggleOptionsMenu()
     {
@@ -52,12 +79,14 @@ public class Options : MonoBehaviour
         LeanTween.alpha(Logo, 0f, 0.5f);
         yield return new WaitForSecondsRealtime(1f);
         optionsObj.SetActive(true);
+        volumeSlider.SetActive(true);
         LeanTween.alpha(optionsObj, 1f, 0.1f);
+        LeanTween.alpha(volumeSlider, 1f, 0.1f);
         yield return new WaitForSecondsRealtime(0.1f);
+        toggleActive = false;
         Logo.SetActive(toggleActive);
         Start.SetActive(toggleActive);
         Exit.SetActive(toggleActive);
-        toggleActive = false;
         hasClicked = false;
         yield break;
     }
@@ -65,8 +94,10 @@ public class Options : MonoBehaviour
     {
         hasClicked = true;
         LeanTween.alpha(optionsObj, 0f, 0.1f);
+        LeanTween.alpha(volumeSlider, 0, 0.1f);
         yield return new WaitForSecondsRealtime(0.1f);
-        optionsObj.SetActive(true);
+        optionsObj.SetActive(false);
+        volumeSlider.SetActive(false);
         LeanTween.alpha(Logo, 1, 0.5f);
         LeanTween.alpha(Start.GetComponent<RectTransform>(), 1, 0.5f);
         LeanTween.alpha(Exit.GetComponent<RectTransform>(), 1, 0.5f);
@@ -78,16 +109,9 @@ public class Options : MonoBehaviour
         yield break;
     }
 
-    public void SetFullscreen()
+    public void SetFullscreen(bool isFs)
     {
-        Screen.fullScreen = !Screen.fullScreen;
-        if (Screen.fullScreen)
-        {
-            Debug.Log("Is Fs");
-        }
-        else
-        {
-            Debug.Log("Isnt Fs");
-        }
+        Screen.fullScreen = isFs;
+        Debug.Log(Screen.fullScreen);
     }
 }
