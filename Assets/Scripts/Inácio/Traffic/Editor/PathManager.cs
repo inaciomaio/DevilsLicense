@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
 
 public class PathManager : EditorWindow
@@ -51,3 +52,5 @@ public class PathManager : EditorWindow
         Selection.activeGameObject = waypoint.gameObject;
     }
 }
+
+#endif

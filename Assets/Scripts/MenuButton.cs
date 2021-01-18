@@ -13,16 +13,7 @@ public class MenuButton : MonoBehaviour
 
     public void Exit()
     {
-        if (Application.isEditor)
-        {
-            Debug.Log("Quit");
-        }
-        else
-        {
-            {
-                Application.Quit();
-            }
-        }
+        Application.Quit();
     }
 
     public void Tutorial()

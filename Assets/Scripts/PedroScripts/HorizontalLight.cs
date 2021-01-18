@@ -38,11 +38,11 @@ public class HorizontalLight : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Car") && hcolorIm == 0)
+        if (collision.CompareTag("Player") && hcolorIm == 0)
         {
             Debug.Log("Stop the car !!!");
         }
-        else if (collision.CompareTag("Car") && hcolorIm == 1 && _manager.promptIsPossible && _manager.changeLightsIsPossible)
+        else if (collision.CompareTag("Player") && hcolorIm == 1 && _manager.promptIsPossible && _manager.changeLightsIsPossible)
         {
             //Make UI Appear
             _prompt.Invoke();

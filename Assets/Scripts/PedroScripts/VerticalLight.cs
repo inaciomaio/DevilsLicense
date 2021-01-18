@@ -38,11 +38,11 @@ public class VerticalLight : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Car") && vcolorIm == 0)
+        if (collision.CompareTag("Player") && vcolorIm == 0)
         {
             Debug.Log("Stop the car !!!");
         }
-        else if (collision.CompareTag("Car") && vcolorIm == 1 && _manager.promptIsPossible && _manager.changeLightsIsPossible)
+        else if (collision.CompareTag("Player") && vcolorIm == 1 && _manager.promptIsPossible && _manager.changeLightsIsPossible)
         {
             //Make Prompt UI Appear
             _prompt.Invoke();

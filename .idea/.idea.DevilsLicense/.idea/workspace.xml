@@ -20,6 +20,7 @@
     <setting file="file://$PROJECT_DIR$/../../../Other/Backup/DevilsLicense/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Manager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/526469D5-A48C-43EE-BD9A-F19F8745AFA1/d3/21676b42/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -29,21 +30,25 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/managerDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/managerDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Test Scene/WaypointChoose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ManagerDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DistanceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/CrosswalkSign.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/AudioOut.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/Editor/PathEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/Editor/PathManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Options.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/TimingSlider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
       </list>
     </option>
   </component>
@@ -67,6 +72,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Devils Licence\AAAAAAA.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\Pedro\Desktop\Devils Licence" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -118,6 +131,7 @@
       <workItem from="1610111852225" duration="5448000" />
       <workItem from="1610403924213" duration="3334000" />
       <workItem from="1610442375443" duration="3019000" />
+      <workItem from="1610933639220" duration="10038000" />
     </task>
     <servers />
   </component>
@@ -134,6 +148,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="911" y="177" width="1009" height="799" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605909522392" />
+    <state x="36" y="206" width="876" height="718" key="dock-window-1" timestamp="1610944254609">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="36" y="206" width="876" height="718" key="dock-window-1/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1610944254609" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606688060422">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

@@ -30,6 +30,10 @@ public class Sign : MonoBehaviour
     public Sprite speed50spr;
     public Sprite cwspr;
 
+    public GameObject timingSlidergo;
+    public TimingSlider timingSlider;
+    public GameObject signPoint;
+    
     public GameObject StopWheel;
     //Other objects
 
@@ -52,6 +56,9 @@ public class Sign : MonoBehaviour
     void Awake()
     {
         StopWheel.SetActive(false);
+
+        timingSlidergo = GameObject.Find("TimingSlider");
+        timingSlider = GameObject.Find("TimingSlider").GetComponent<TimingSlider>();
     }
     
     void Start()
@@ -105,7 +112,7 @@ public class Sign : MonoBehaviour
                 break;
         }
 
-        if (signId > 5)
+        if (signId > 6)
         {
             signId = 0;
         }
@@ -115,6 +122,11 @@ public class Sign : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
+        StopWheel.SetActive(false);
+        _manager.promptIsPossible = true;
+        Time.timeScale = 1f;
+        NullifyTimingSlider();
+        
         if (_manager.promptIsPossible)
         {
             car = collision.GetComponent<CarAI>();
@@ -206,11 +218,14 @@ public class Sign : MonoBehaviour
 
     public void OnButtonClick()
     {
+        timingSlider.canCalculate = true;
         StartCoroutine(StopWheelCR());
+        timingSlider.signPointSl = signPoint;
     }
 
     public void LeftButtonClicked()
     {
+        NullifyTimingSlider();
         signId = 1;
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
@@ -219,6 +234,7 @@ public class Sign : MonoBehaviour
 
     public void ForwardButtonClicked()
     {
+        NullifyTimingSlider();
         signId = 2;
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
@@ -227,6 +243,7 @@ public class Sign : MonoBehaviour
 
     public void RightButtonClicked()
     {
+        NullifyTimingSlider();
         signId = 3;
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
@@ -235,6 +252,7 @@ public class Sign : MonoBehaviour
     
     public void FiftyButtonClicked()
     {
+        NullifyTimingSlider();
         signId = 5;
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
@@ -243,6 +261,7 @@ public class Sign : MonoBehaviour
 
     public void ThirtyButtonClicked()
     {
+        NullifyTimingSlider();
         signId = 4;
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
@@ -251,6 +270,7 @@ public class Sign : MonoBehaviour
 
     public void CwButtonClicked()
     {
+        NullifyTimingSlider();
         signId = 6;
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
@@ -259,6 +279,7 @@ public class Sign : MonoBehaviour
 
     public void StopButtonClicked()
     {
+        NullifyTimingSlider();
         signId = 0;
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
@@ -271,6 +292,7 @@ public class Sign : MonoBehaviour
         Time.timeScale = 0.1f;
         StopWheel.SetActive(true);
         yield return new WaitForSecondsRealtime(3);
+        NullifyTimingSlider();
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         yield return Time.timeScale = 1f;
@@ -281,5 +303,12 @@ public class Sign : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         car.CanDrive = true;
+    }
+
+    void NullifyTimingSlider()
+    {
+        timingSlider.canCalculate = false;
+        timingSlider.signPointSl = null;
+        timingSlider.timingSliderSl.value = 0;
     }
 }

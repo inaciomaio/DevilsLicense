@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
+using System.Diagnostics;
+using System.Linq;
 using System.Net.Mime;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using UnityScript.Scripting.Pipeline;
 using Image = UnityEngine.UI.Image;
 
 public class Options : MonoBehaviour
@@ -43,10 +43,10 @@ public class Options : MonoBehaviour
 
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string option = resolutions[i].width + "x" + resolutions[i].height;
+            string option = resolutions[i].width+ "x" + resolutions[i].height + " " + resolutions[i].refreshRate + " " + "Hz";
             options.Add(option);
 
-            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height && resolutions[i].refreshRate == Screen.currentResolution.refreshRate)
             {
                 currentResolutionIndex = i;
             }
@@ -109,9 +109,14 @@ public class Options : MonoBehaviour
         yield break;
     }
 
+    public void SetResolution(int resolutionIndex)
+    {
+        Resolution resolution = resolutions[resolutionIndex];
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
     public void SetFullscreen(bool isFs)
     {
         Screen.fullScreen = isFs;
-        Debug.Log(Screen.fullScreen);
     }
 }
