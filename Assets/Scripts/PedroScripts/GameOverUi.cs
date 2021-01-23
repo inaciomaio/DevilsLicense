@@ -14,18 +14,18 @@ public class GameOverUi : MonoBehaviour
     private Manager _manager;
     void Awake()
     {
-        _youLost = GameObject.Find("YouLostText");
-        _youWon = GameObject.Find("YouWonText");
-        _errorText = GameObject.Find("ErrorsText").GetComponent<TextMeshProUGUI>();
+        _youLost = GameObject.Find("DefeatText");
+        _youWon = GameObject.Find("VictoryText");
+
     }
     
     void Start()
     {
         _manager = GameObject.Find("Manager").GetComponent<Manager>();
         
-        _youLost.SetActive(false);
         _youWon.SetActive(false);
-        
+        _youLost.SetActive(false);
+
         if (_manager.errorCount >= 3)
         {
             _youWon.SetActive(true);
@@ -34,9 +34,9 @@ public class GameOverUi : MonoBehaviour
         {
             _youLost.SetActive(true);
         }
-
-        _errorText.text = "Errors:" + " " + _manager.errorCount;
     }
+    
+    //After game over, save game (Manager)
     
     public void RetryButton()
     {
@@ -48,5 +48,10 @@ public class GameOverUi : MonoBehaviour
     {
         _manager.errorCount = 0;
         SceneManager.LoadScene("Menu");
+    }
+
+    public void ExitButton()
+    {
+        Application.Quit();
     }
 }

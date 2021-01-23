@@ -12,6 +12,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Loader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/RaycastSign.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/TreasureScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
@@ -36,9 +37,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/CrosswalkSign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/AudioOut.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
@@ -48,7 +46,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/TimingSlider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/AI/CarAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Car.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/RaycastSign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
       </list>
     </option>
   </component>
@@ -132,6 +136,8 @@
       <workItem from="1610403924213" duration="3334000" />
       <workItem from="1610442375443" duration="3019000" />
       <workItem from="1610933639220" duration="10038000" />
+      <workItem from="1611344555840" duration="14678000" />
+      <workItem from="1611426621562" duration="14012000" />
     </task>
     <servers />
   </component>
@@ -148,13 +154,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="911" y="177" width="1009" height="799" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605909522392" />
-    <state x="36" y="206" width="876" height="718" key="dock-window-1" timestamp="1610944254609">
+    <state x="0" y="36" width="1305" height="728" key="dock-window-1" timestamp="1611427793065">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="36" y="206" width="876" height="718" key="dock-window-1/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1610944254609" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1606688060422">
+    <state x="0" y="36" width="1305" height="728" key="dock-window-1/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1611427793065" />
+    <state x="456" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1611437758945">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="456" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1611437758945" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606688060422" />
   </component>
 </project>

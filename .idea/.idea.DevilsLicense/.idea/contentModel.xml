@@ -7,8 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="CarSound.cs" t="Include" />
-        <e p="CrosswalkBehaviour.cs" t="Include" />
         <e p="Dependencies" t="Include">
           <e p="NavMeshPlus-master" t="Include">
             <e p="NavMeshComponents" t="Include">
@@ -171,6 +169,8 @@
                 <e p="CarAI.cs" t="Include" />
                 <e p="PedAI.cs" t="Include" />
               </e>
+              <e p="CarSound.cs" t="Include" />
+              <e p="CrosswalkBehaviour.cs" t="Include" />
               <e p="Editor" t="Include">
                 <e p="PathEditor.cs" t="Include" />
                 <e p="PathManager.cs" t="Include" />
@@ -196,6 +196,7 @@
             <e p="HorizontalLight.cs" t="Include" />
             <e p="IntersectionLights.cs" t="Include" />
             <e p="LevelEnd.cs" t="Include" />
+            <e p="RaycastSign.cs" t="Include" />
             <e p="Sign.cs" t="Include" />
             <e p="Test Scene" t="Include">
               <e p="Speedometer.cs" t="Include" />

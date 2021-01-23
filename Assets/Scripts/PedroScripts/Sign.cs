@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -216,11 +217,15 @@ public class Sign : MonoBehaviour
    //     }
    // }
 
-    public void OnButtonClick()
+   
+   public void OnButtonClick()
     {
-        timingSlider.canCalculate = true;
-        StartCoroutine(StopWheelCR());
-        timingSlider.signPointSl = signPoint;
+        if (Manager.CanClickSign)
+        {
+            timingSlider.canCalculate = true;
+            StartCoroutine(StopWheelCR());
+            timingSlider.signPointSl = signPoint;
+        }
     }
 
     public void LeftButtonClicked()

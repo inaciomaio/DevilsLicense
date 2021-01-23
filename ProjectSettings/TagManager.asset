@@ -10,6 +10,8 @@ TagManager:
   - Vertical Light
   - Ped
   - Crosswalk
+  - Sign
+  - Audio
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - 
   - Road
   - Cars
-  - 
+  - Signs
   - 
   - 
   - 

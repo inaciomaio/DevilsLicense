@@ -8,6 +8,8 @@ public class LevelEnd : MonoBehaviour
 {
     private Manager _manager;
     private UnityEvent _gameOver;
+
+    
     void Start()
     {
         _manager = GameObject.Find("Manager").GetComponent<Manager>();

@@ -18,6 +18,7 @@ public class TimingSlider : MonoBehaviour
     {
         car = GameObject.Find("CarPoint");
         timingSliderSl = gameObject.GetComponent<Slider>();
+        
     }
     void Update()
     {
