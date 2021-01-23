@@ -9,9 +9,16 @@ TagManager:
   - Horizontal Light
   - Vertical Light
   - Ped
+<<<<<<< Updated upstream
   - Crosswalk
   - Sign
   - Audio
+=======
+  - GreenLight
+  - RedLight
+  - GreenCrosswalk
+  - RedCrosswalk
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

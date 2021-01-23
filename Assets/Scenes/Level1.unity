@@ -1248,6 +1248,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
 --- !u!212 &67130655 stripped
@@ -2101,7 +2106,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -2859,7 +2864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 163163018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 118.42999, y: 86.26656, z: 0}
+  m_LocalPosition: {x: 118.42999, y: 85.57125, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 378851779}
@@ -2915,7 +2920,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -6148,6 +6153,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hlight (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7954,6 +7964,7 @@ Transform:
   - {fileID: 215915910}
   - {fileID: 778497745}
   - {fileID: 957934828}
+  - {fileID: 1464683621}
   m_Father: {fileID: 1486165107}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8464,7 +8475,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -9867,6 +9878,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hlight 3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
       objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
@@ -11976,6 +11992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vlight 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
 --- !u!4 &612977001 stripped
@@ -12877,8 +12898,8 @@ MonoBehaviour:
   signPoint: {fileID: 412352932}
   StopWheel: {fileID: 664534784}
   currentWaypointForward: {fileID: 0}
-  currentWaypointLeft: {fileID: 0}
-  currentWaypointRight: {fileID: 0}
+  currentWaypointLeft: {fileID: 1774532597}
+  currentWaypointRight: {fileID: 1464683622}
   CanNPCsUseForward: 0
   CanNPCsUseLeft: 0
   CanNPCsUseRight: 0
@@ -13409,6 +13430,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
 --- !u!212 &701155530 stripped
@@ -13439,6 +13465,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
       objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
@@ -15859,6 +15890,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
 --- !u!212 &786525789 stripped
@@ -17060,6 +17096,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vlight 3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
 --- !u!4 &826185044 stripped
@@ -17929,7 +17970,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -19478,6 +19519,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vlight 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
 --- !u!4 &946456506 stripped
@@ -20147,7 +20193,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -21170,6 +21216,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Vlight
       objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
 --- !u!4 &1027411501 stripped
@@ -22047,6 +22098,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hlight 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22152,6 +22208,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
       objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
@@ -23206,7 +23267,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -24710,6 +24771,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hlight 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
       objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
@@ -26278,6 +26344,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -26759,6 +26830,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crosswalk (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -28743,7 +28819,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -29870,7 +29946,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -31397,6 +31473,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1464683620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1464683621}
+  - component: {fileID: 1464683622}
+  m_Layer: 0
+  m_Name: Waypoint 0 (134)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1464683621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464683620}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.830002, y: 34.93844, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 378851779}
+  m_RootOrder: 134
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464683622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464683620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83607594ad2ff3f449cd8d1081c25705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextWaypoints:
+  - {fileID: 657906266}
 --- !u!1 &1466358270
 GameObject:
   m_ObjectHideFlags: 0
@@ -31985,6 +32106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
@@ -37040,6 +37166,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
+      objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38170,7 +38301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730527440}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.830002, y: 32.54, z: 0}
+  m_LocalPosition: {x: 31.830002, y: 33.71969, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 378851779}
@@ -38332,7 +38463,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -38621,7 +38752,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -38727,7 +38858,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextWaypoints:
   - {fileID: 1468450409}
-  - {fileID: 0}
 --- !u!4 &1774532598
 Transform:
   m_ObjectHideFlags: 0
@@ -39157,6 +39287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Vlight 5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4926864253662387727, guid: 95a717da78aa74440b9f23e41e6ce035,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95a717da78aa74440b9f23e41e6ce035, type: 3}
@@ -40613,7 +40748,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -40700,6 +40835,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Hlight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1946058667041256501, guid: 16f9d3cc0e16a404da90cc6290efb088,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedLight
       objectReference: {fileID: 0}
     - target: {fileID: 8365286550621083998, guid: 16f9d3cc0e16a404da90cc6290efb088,
         type: 3}
@@ -45140,7 +45280,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: Crosswalk
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -46083,6 +46223,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1604415637}
     m_Modifications:
+    - target: {fileID: 878109802807468611, guid: 2259a64f862e3df458bb03ef30906081,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 878109802807468612, guid: 2259a64f862e3df458bb03ef30906081,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46641,6 +46786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Crosswalk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
+        type: 3}
+      propertyPath: m_TagString
+      value: RedCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}

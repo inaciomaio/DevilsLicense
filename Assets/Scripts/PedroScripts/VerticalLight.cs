@@ -14,6 +14,7 @@ public class VerticalLight : MonoBehaviour
 
     void Awake()
     {
+        transform.gameObject.tag = "RedLight";
         lightsManager = GameObject.Find("IntersectionLM").GetComponent<IntersectionLights>();
     }
     
@@ -34,6 +35,15 @@ public class VerticalLight : MonoBehaviour
     void Update()
     {
         vcolorIm = lightsManager.vcolor;
+
+        if (vcolorIm != 0)
+        {
+            transform.gameObject.tag = "GreenLight";
+        }
+        else if (vcolorIm != 1)
+        {
+            transform.gameObject.tag = "RedLight";
+        }
     }
     
     void OnTriggerEnter2D(Collider2D collision)

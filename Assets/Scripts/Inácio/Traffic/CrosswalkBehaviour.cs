@@ -10,7 +10,7 @@ public class CrosswalkBehaviour : MonoBehaviour
     {
         if(collision.CompareTag("Ped"))
         {
-            PedDetected = true;
+            transform.gameObject.tag = "RedCrosswalk";
         }
     }
 
@@ -18,7 +18,7 @@ public class CrosswalkBehaviour : MonoBehaviour
     {
         if(collision.CompareTag("Ped"))
         {
-            PedDetected = false;
+            transform.gameObject.tag = "GreenCrosswalk";
         }
     }
 }

@@ -14,6 +14,7 @@ public class HorizontalLight : MonoBehaviour
 
     void Awake()
     {
+        transform.gameObject.tag = "RedLight";
         lightsManager = GameObject.Find("IntersectionLM").GetComponent<IntersectionLights>();
     }
     
@@ -34,6 +35,15 @@ public class HorizontalLight : MonoBehaviour
     void Update()
     {
         hcolorIm = lightsManager.hcolor;
+
+        if(hcolorIm != 0)
+        {
+            transform.gameObject.tag = "GreenLight";
+        }
+        else if(hcolorIm != 1)
+        {
+            transform.gameObject.tag = "RedLight";
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

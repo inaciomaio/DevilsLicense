@@ -6,14 +6,10 @@ public class StopSign : MonoBehaviour
 {
     private CarAI car;
 
-    private void Start()
-    {
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Player") || collision.CompareTag("Car"))
+        if (collision.CompareTag("Player") | collision.CompareTag("Car"))
         {
             car = collision.GetComponent<CarAI>();
             car.CanDrive = false;

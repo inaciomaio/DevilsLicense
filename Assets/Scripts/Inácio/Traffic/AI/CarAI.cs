@@ -105,10 +105,10 @@ public class CarAI : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, 1.5f);
         Debug.DrawRay(transform.position, transform.up * 3f, Color.red);
-        
-        if (hit.collider != null)
+
+        if (hit)
         {
-            Debug.Log(hit.collider.name);
+
             if (hit.collider.CompareTag("Car") | hit.collider.CompareTag("Player"))
             {
                 CanDrive = false;
@@ -118,43 +118,22 @@ public class CarAI : MonoBehaviour
                 CanDrive = true;
             }
 
-            if (hit.collider.CompareTag("Horizontal Light"))
+            if (hit.collider.CompareTag("RedLight"))
             {
-                var trafficH = hit.collider.GetComponent<HorizontalLight>();
-                if (trafficH.hcolorIm != 1)
-                {
-                    CanDrive = false;
-                }
-                else
-                {
-                    CanDrive = true;
-                }
+                CanDrive = false;
+            }
+            else if (hit.collider.CompareTag("GreenLight"))
+            {
+                CanDrive = true;
             }
 
-            if (hit.collider.CompareTag("Vertical Light"))
+            if (hit.collider.CompareTag("RedCrosswalk"))
             {
-                var trafficV = hit.collider.GetComponent<VerticalLight>();
-                if (trafficV.vcolorIm != 1)
-                {
-                    CanDrive = false;
-                }
-                else
-                {
-                    CanDrive = true;
-                }
+                CanDrive = false;
             }
-
-            if (hit.collider.CompareTag("Crosswalk"))
+            else if (hit.collider.CompareTag("GreenCrosswalk"))
             {
-                crosswalk = hit.collider.GetComponent<CrosswalkBehaviour>();
-                if (crosswalk.PedDetected)
-                {
-                    CanDrive = false;
-                }
-                else
-                {
-                    CanDrive = true;
-                }
+                CanDrive = true;
             }
         }
     }
