@@ -6,19 +6,15 @@ TagManager:
   tags:
   - Car
   - Entry
-  - Horizontal Light
-  - Vertical Light
-  - Ped
-<<<<<<< Updated upstream
-  - Crosswalk
   - Sign
-  - Audio
-=======
-  - GreenLight
+  - Ped
   - RedLight
-  - GreenCrosswalk
   - RedCrosswalk
->>>>>>> Stashed changes
+  - GreenLight
+  - GreenCrosswalk
+  - Vertical Light
+  - Horizontal Light
+  - Crosswalk
   layers:
   - Default
   - TransparentFX
@@ -30,7 +26,7 @@ TagManager:
   - 
   - Road
   - Cars
-  - Signs
+  - 
   - 
   - 
   - 
