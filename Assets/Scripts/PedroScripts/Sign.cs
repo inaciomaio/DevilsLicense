@@ -235,6 +235,7 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
     }
 
     public void ForwardButtonClicked()
@@ -244,6 +245,7 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
     }
 
     public void RightButtonClicked()
@@ -253,6 +255,7 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
     }
     
     public void FiftyButtonClicked()
@@ -262,6 +265,7 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
     }
 
     public void ThirtyButtonClicked()
@@ -271,6 +275,7 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
     }
 
     public void CwButtonClicked()
@@ -280,6 +285,7 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
     }
 
     public void StopButtonClicked()
@@ -289,11 +295,13 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
     }
 
     IEnumerator StopWheelCR()
     {
         _manager.promptIsPossible = false;
+        _manager.pause.isAbleToPause = false;
         Time.timeScale = 0.1f;
         StopWheel.SetActive(true);
         yield return new WaitForSecondsRealtime(3);
@@ -301,6 +309,7 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         yield return Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
     }
 
     //Required for StopSign

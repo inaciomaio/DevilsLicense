@@ -11,17 +11,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Loader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/RaycastSign.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/TreasureScript.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Other/Backup/DevilsLicense/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Manager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/526469D5-A48C-43EE-BD9A-F19F8745AFA1/d3/21676b42/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Loader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/TreasureScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Manager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -34,8 +35,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ManagerDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DistanceManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/CrosswalkSign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/AudioOut.cs" />
@@ -48,11 +47,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/TimingSlider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/AI/CarAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Car.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/RaycastSign.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pause.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GlobalLoader.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GlobalManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PauseButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
       </list>
     </option>
   </component>
@@ -138,6 +143,7 @@
       <workItem from="1610933639220" duration="10038000" />
       <workItem from="1611344555840" duration="14678000" />
       <workItem from="1611426621562" duration="14012000" />
+      <workItem from="1611514839379" duration="13414000" />
     </task>
     <servers />
   </component>
@@ -154,14 +160,18 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="911" y="177" width="1009" height="799" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1605909522392" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1611538581304">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1611538581304" />
     <state x="0" y="36" width="1305" height="728" key="dock-window-1" timestamp="1611427793065">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="0" y="36" width="1305" height="728" key="dock-window-1/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1611427793065" />
-    <state x="456" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1611437758945">
+    <state x="456" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1611538907274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="456" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1611437758945" />
+    <state x="456" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1611538907274" />
     <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1606688060422" />
   </component>
 </project>

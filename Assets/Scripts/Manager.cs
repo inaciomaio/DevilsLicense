@@ -14,7 +14,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     public float timeScaleValue;
     public float distance;
 
-    private bool gameEnded;
+    public bool gameEnded;
     //Sign variables
     
     public static bool CanClickSign = false;
@@ -43,6 +43,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
 
     public int speed = 10;
     public int currentSceneIndex;
+    public Pause pause;
     void Awake()
     {
         Time.timeScale = 1;
@@ -73,6 +74,8 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         error0.SetActive(false);
         error1.SetActive(false);
         error2.SetActive(false);
+
+        pause = gameObject.GetComponent<Pause>();
     }
     
     void Update()
@@ -140,6 +143,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
 
     IEnumerator GreenLightUIPrompt()
     {
+        pause.isAbleToPause = false;
         promptIsPossible = false;
         Time.timeScale = timeScaleValue;
         prompt.SetActive(true);
@@ -148,6 +152,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         prompt.SetActive(false);
         promptIsPossible = true;
         yield return Time.timeScale = 1f;
+        pause.isAbleToPause = true;
     }
 
     /*IEnumerator SignUIPrompt()

@@ -54,4 +54,9 @@ public class GameOverUi : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ResumeButton()
+    {
+        
+    }
 }

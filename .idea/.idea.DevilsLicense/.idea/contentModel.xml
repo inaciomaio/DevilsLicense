@@ -187,6 +187,7 @@
           <e p="MenuButton.cs" t="Include" />
           <e p="Options.cs" t="Include" />
           <e p="Pause.cs" t="Include" />
+          <e p="PauseButton.cs" t="Include" />
           <e p="PedroScripts" t="Include">
             <e p="AudioOut.cs" t="Include" />
             <e p="CrosswalkPed.cs" t="Include" />

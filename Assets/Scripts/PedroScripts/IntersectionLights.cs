@@ -96,7 +96,7 @@ public class IntersectionLights : MonoBehaviour
         _manager.errorCount++;
         _manager.changeLightsIsPossible = false;
         _manager.prompt.SetActive(false);
-        //Time.TimeScale = 1f; ???
+        Time.timeScale = 1f;
         
         for (int i = 0; i < horizontalLights.Length; i++)
         {
@@ -136,10 +136,11 @@ public class IntersectionLights : MonoBehaviour
             vcolor = 1;
         }
         else
-        {
+        {    
             vcolor = 0;
         }
         
         Manager.T = 0;
+        _manager.pause.isAbleToPause = true;
     }
 }
