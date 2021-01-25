@@ -127,7 +127,6 @@ public class Sign : MonoBehaviour
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
         NullifyTimingSlider();
-        
         if (_manager.promptIsPossible)
         {
             car = collision.GetComponent<CarAI>();
@@ -135,18 +134,16 @@ public class Sign : MonoBehaviour
             {
                 case 0:
                     //Stop sign Function
-                    if (collision.CompareTag("Car") || collision.CompareTag("Player"))
+                    if (collision.CompareTag("Car") | collision.CompareTag("Player"))
                     {
-                        navigator = collision.GetComponent<WaypointNavigator>();    
-                        car.CanDrive = false;
-                        StartCoroutine("Stop");
+                        StartCoroutine(Stop());
                     }
                     break;
                 case 1:
                     //TurnLeft sign Function
                     if (CanNPCsUseLeft && currentWaypointLeft != null)
                     {
-                        if (collision.CompareTag("Car") || collision.CompareTag("Player"))
+                        if (collision.CompareTag("Car") | collision.CompareTag("Player"))
                         {
                             navigator = collision.GetComponent<WaypointNavigator>();
                             navigator.currentWaypoint = currentWaypointLeft;
@@ -164,7 +161,7 @@ public class Sign : MonoBehaviour
                 case 2:
                     if (CanNPCsUseForward && currentWaypointForward != null)
                     {
-                        if (collision.CompareTag("Car") || collision.CompareTag("Player"))
+                        if (collision.CompareTag("Car") | collision.CompareTag("Player"))
                         {
                             navigator = collision.GetComponent<WaypointNavigator>();
                             navigator.currentWaypoint = currentWaypointForward;
@@ -183,7 +180,7 @@ public class Sign : MonoBehaviour
                     //TurnRight sign Function
                     if (CanNPCsUseRight && currentWaypointRight != null)
                     {
-                        if (collision.CompareTag("Car") || collision.CompareTag("Player"))
+                        if (collision.CompareTag("Car") | collision.CompareTag("Player"))
                         {
                             navigator = collision.GetComponent<WaypointNavigator>();
                             navigator.currentWaypoint = currentWaypointRight;
@@ -315,8 +312,9 @@ public class Sign : MonoBehaviour
     //Required for StopSign
     private IEnumerator Stop()
     {
-        yield return new WaitForSeconds(5);
-        car.CanDrive = true;
+        car.TargetSpeed = 0;
+        yield return new WaitForSeconds(3);
+        car.TargetSpeed = 8.3333333f;
     }
 
     void NullifyTimingSlider()

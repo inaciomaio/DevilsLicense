@@ -2235,7 +2235,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -3049,7 +3049,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -8740,7 +8740,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -18364,7 +18364,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -20716,7 +20716,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -23790,7 +23790,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -27357,7 +27357,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -29342,7 +29342,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -30469,7 +30469,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -39068,7 +39068,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -39357,7 +39357,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -41353,7 +41353,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -45885,7 +45885,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
@@ -47395,7 +47395,7 @@ PrefabInstance:
     - target: {fileID: 4994937977386092932, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
       propertyPath: m_TagString
-      value: RedCrosswalk
+      value: GreenCrosswalk
       objectReference: {fileID: 0}
     - target: {fileID: 6927492318133966256, guid: 9adf398f9b8a23b47b20cb727d3f5976,
         type: 3}
