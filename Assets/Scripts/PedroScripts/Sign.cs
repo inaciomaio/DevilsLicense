@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UIElements;
+using Slider = UnityEngine.UI.Slider;
 
 /*
  * Stop (Id=0)
@@ -36,6 +38,8 @@ public class Sign : MonoBehaviour
     public GameObject signPoint;
     
     public GameObject StopWheel;
+
+    public bool pressedInTime;
     //Other objects
 
     private WaypointNavigator navigator;
@@ -46,7 +50,7 @@ public class Sign : MonoBehaviour
     public Waypoint currentWaypointLeft;
     public Waypoint currentWaypointRight;
     public bool CanNPCsUseForward;
-    public bool CanNPCsUseLeft;     
+    public bool CanNPCsUseLeft;
     public bool CanNPCsUseRight;
 
     //[Header("ChangeRoadTargetSpeed Properties")]
@@ -126,8 +130,9 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
+        _manager.pause.isAbleToPause = true;
         NullifyTimingSlider();
-        if (_manager.promptIsPossible)
+        if (_manager.promptIsPossible && pressedInTime == false) //ErrorCount timing
         {
             car = collision.GetComponent<CarAI>();
             switch (signId)
@@ -217,7 +222,7 @@ public class Sign : MonoBehaviour
    
    public void OnButtonClick()
     {
-        if (Manager.CanClickSign)
+        if (Manager.CanClickSign && _manager.changeSignIsPossible)
         {
             timingSlider.canCalculate = true;
             StartCoroutine(StopWheelCR());
@@ -227,6 +232,13 @@ public class Sign : MonoBehaviour
 
     public void LeftButtonClicked()
     {
+        _manager.changeSignIsPossible = false;
+        StartCoroutine(ChangeSignCooldown());
+        if (timingSlidergo.GetComponent<Slider>().value > 4.2f) //ErrorCount timing
+        {
+            _manager.errorCount++;
+            pressedInTime = true;
+        }
         NullifyTimingSlider();
         signId = 1;
         StopWheel.SetActive(false);
@@ -237,6 +249,13 @@ public class Sign : MonoBehaviour
 
     public void ForwardButtonClicked()
     {
+        _manager.changeSignIsPossible = false;
+        StartCoroutine(ChangeSignCooldown());
+        if (timingSlidergo.GetComponent<Slider>().value > 4.2f) //ErrorCount timing
+        {
+            _manager.errorCount++;
+            pressedInTime = true;
+        }
         NullifyTimingSlider();
         signId = 2;
         StopWheel.SetActive(false);
@@ -247,6 +266,13 @@ public class Sign : MonoBehaviour
 
     public void RightButtonClicked()
     {
+        _manager.changeSignIsPossible = false;
+        StartCoroutine(ChangeSignCooldown());
+        if (timingSlidergo.GetComponent<Slider>().value > 4.2f) //ErrorCount timing
+        {
+            _manager.errorCount++;
+            pressedInTime = true;
+        }
         NullifyTimingSlider();
         signId = 3;
         StopWheel.SetActive(false);
@@ -257,6 +283,13 @@ public class Sign : MonoBehaviour
     
     public void FiftyButtonClicked()
     {
+        _manager.changeSignIsPossible = false;
+        StartCoroutine(ChangeSignCooldown());
+        if (timingSlidergo.GetComponent<Slider>().value > 4.2f) //ErrorCount timing
+        {
+            _manager.errorCount++;
+            pressedInTime = true;
+        }
         NullifyTimingSlider();
         signId = 5;
         StopWheel.SetActive(false);
@@ -267,6 +300,13 @@ public class Sign : MonoBehaviour
 
     public void ThirtyButtonClicked()
     {
+        _manager.changeSignIsPossible = false;
+        StartCoroutine(ChangeSignCooldown());
+        if (timingSlidergo.GetComponent<Slider>().value > 4.2f) //ErrorCount timing
+        {
+            _manager.errorCount++;
+            pressedInTime = true;
+        }
         NullifyTimingSlider();
         signId = 4;
         StopWheel.SetActive(false);
@@ -287,6 +327,14 @@ public class Sign : MonoBehaviour
 
     public void StopButtonClicked()
     {
+        
+        _manager.changeSignIsPossible = false;
+        StartCoroutine(ChangeSignCooldown());
+        if (timingSlidergo.GetComponent<Slider>().value > 4.2f) //ErrorCount timing
+        {
+            _manager.errorCount++;
+            pressedInTime = true;
+        }
         NullifyTimingSlider();
         signId = 0;
         StopWheel.SetActive(false);
@@ -301,7 +349,11 @@ public class Sign : MonoBehaviour
         _manager.pause.isAbleToPause = false;
         Time.timeScale = 0.1f;
         StopWheel.SetActive(true);
-        yield return new WaitForSecondsRealtime(3);
+        yield return new WaitForSecondsRealtime(6);
+        if (pressedInTime) //ErrorCount timing
+        {
+            StartCoroutine(ResetTimingVar());
+        }
         NullifyTimingSlider();
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
@@ -315,6 +367,18 @@ public class Sign : MonoBehaviour
         car.TargetSpeed = 0;
         yield return new WaitForSeconds(3);
         car.TargetSpeed = 8.3333333f;
+    }
+
+    IEnumerator ResetTimingVar() //ErrorCount timing
+    {
+        yield return new WaitForSecondsRealtime(2);
+        yield return pressedInTime = false;
+    }
+
+    IEnumerator ChangeSignCooldown()
+    {
+        yield return new WaitForSecondsRealtime(_manager.sCooldown);
+        yield return _manager.changeSignIsPossible = true;
     }
 
     void NullifyTimingSlider()

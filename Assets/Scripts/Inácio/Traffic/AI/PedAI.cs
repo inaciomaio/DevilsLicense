@@ -31,8 +31,8 @@ public class PedAI : MonoBehaviour
             
         }
 
-        Debug.Log("Destination 0: " + manager.Destinations[0]);
-        Debug.Log("Destinations Count" + manager.Destinations.Count);
+        //Debug.Log("Destination 0: " + manager.Destinations[0]);
+        //("Destinations Count" + manager.Destinations.Count);
 
         if(Vector3.Distance(transform.position, manager.Destinations[DestinationIndex].position) <= agent.stoppingDistance)
         {
@@ -50,7 +50,7 @@ public class PedAI : MonoBehaviour
         if (manager.Destinations.Count != 0)
         {
             DestinationIndex = Random.Range(0, manager.Destinations.Count - 1);
-            Debug.Log("random number - " + DestinationIndex);
+            //Debug.Log("random number - " + DestinationIndex);
         }
 
         return DestinationIndex;

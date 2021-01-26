@@ -9,16 +9,20 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
 {
     //Level variables
     
-    public float timeSlowSeconds = 2.5f;
+    public float timeSlowSeconds = 0.5f;
     public static float T;
     public float timeScaleValue;
     public float distance;
+
+    public int tlCooldown = 15;
+    public int sCooldown = 10;
 
     public bool gameEnded;
     //Sign variables
     
     public static bool CanClickSign = false;
     public bool promptIsPossible = true;
+    public bool changeSignIsPossible = true;
     public bool changeLightsIsPossible = true;
 
     //Level error Counter
@@ -33,6 +37,10 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     public GameObject destination; //Final
     public GameObject tempUi; //All UI that won't be available at game over screen
     public GameObject power1;
+    public GameObject power2;
+    
+    public GameObject veloc30;
+    public GameObject veloc50;
 
     private GameObject error0;
     private GameObject error1;
@@ -53,6 +61,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         gameOverUi = GameObject.Find("GameOverUi");
         tempUi = GameObject.Find("TempUi");
         power1 = GameObject.Find("Power1");
+        power2 = GameObject.Find("Power2");
         stars = GameObject.Find("StarsScore");
         starsPoint = GameObject.Find("StarsPoint").GetComponent<Transform>();
         
@@ -76,10 +85,24 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         error2.SetActive(false);
 
         pause = gameObject.GetComponent<Pause>();
+
+        veloc30 = GameObject.Find("30pont");
+        veloc50 = GameObject.Find("50pont");
     }
     
     void Update()
     {
+        if (_carAi.TargetSpeed <= 6)
+        {
+            veloc30.SetActive(true);
+            veloc50.SetActive(false);
+        }
+        else
+        {
+            veloc30.SetActive(false);
+            veloc50.SetActive(true);
+        }
+        
         if (CanClickSign)
         {
             Debug.Log("CANCLICKSIGN");
@@ -92,6 +115,15 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         else
         {
             power1.SetActive(false);
+        }
+
+        if (changeSignIsPossible)
+        {
+            power2.SetActive(true);
+        }
+        else
+        {
+            power2.SetActive(false);
         }
 
         T += Time.deltaTime;
@@ -148,10 +180,10 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         Time.timeScale = timeScaleValue;
         prompt.SetActive(true);
         yield return new WaitForSecondsRealtime(timeSlowSeconds);
+        yield return Time.timeScale = 1f;
         StartCoroutine(ChangeLightsCooldown());
         prompt.SetActive(false);
         promptIsPossible = true;
-        yield return Time.timeScale = 1f;
         pause.isAbleToPause = true;
     }
 
@@ -170,7 +202,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
 
     IEnumerator ChangeLightsCooldown()  
     {
-        yield return new WaitForSecondsRealtime(10); // Power cooldown (can be changed)
+        yield return new WaitForSecondsRealtime(tlCooldown); // Power cooldown (can be changed)
         yield return changeLightsIsPossible = true;
     }
     

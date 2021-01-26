@@ -44,7 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1966bac6b399b8d46bfb83c1b169941f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isAbleToPause: 0
   IsPaused: 0
+  pauseUI: {fileID: 0}
+  pbga: 0
 --- !u!114 &2565761835737089072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,13 +60,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86029c4d803caf045b9e30fd2b19a9cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeSlowSeconds: 1.5
-  timeScaleValue: 0.5
+  timeSlowSeconds: 0.7
+  timeScaleValue: 0.7
   distance: 0
+  tlCooldown: 15
+  gameEnded: 0
+  promptIsPossible: 1
+  changeLightsIsPossible: 1
   errorCount: 0
   gameOverUi: {fileID: 0}
   prompt: {fileID: 0}
   car: {fileID: 0}
   destination: {fileID: 0}
   tempUi: {fileID: 0}
+  power1: {fileID: 0}
+  stars: {fileID: 0}
+  starsPoint: {fileID: 0}
+  speed: 10
   currentSceneIndex: 0
+  pause: {fileID: 0}

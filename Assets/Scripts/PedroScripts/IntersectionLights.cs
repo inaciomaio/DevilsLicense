@@ -19,6 +19,7 @@ public class IntersectionLights : MonoBehaviour
     public int hcolor;
     public int vcolor;
     public float tt;
+    public bool hasClicked;
 
     public Sprite greenLightSp;
     public Sprite redLightSp;
@@ -93,7 +94,7 @@ public class IntersectionLights : MonoBehaviour
     
     public void ChangeLightsCall()
     {
-        _manager.errorCount++;
+        hasClicked = true;
         _manager.changeLightsIsPossible = false;
         _manager.prompt.SetActive(false);
         Time.timeScale = 1f;
@@ -136,7 +137,7 @@ public class IntersectionLights : MonoBehaviour
             vcolor = 1;
         }
         else
-        {    
+        {
             vcolor = 0;
         }
         

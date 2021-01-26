@@ -27,5 +27,10 @@ public class TimingSlider : MonoBehaviour
             distanceTs = Vector3.Distance(car.transform.position, signPointSl.transform.position);
             timingSliderSl.value = timingSliderSl.maxValue - distanceTs;
         }
+        else
+        {
+            distanceTs = 0;
+        }
+        
     }
 }
