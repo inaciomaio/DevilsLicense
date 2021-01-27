@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    Transform player;
+    private Transform player;
 
     void Awake()
     {

@@ -12,11 +12,11 @@ public class PathEditor
     {
         if ((gizmoType & GizmoType.Selected) != 0)
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = Color.green;
         }
         else
         {
-            Gizmos.color = Color.red * .5f;
+            Gizmos.color = Color.red;
         }
 
         Gizmos.DrawSphere(waypoint.transform.position, .20f);

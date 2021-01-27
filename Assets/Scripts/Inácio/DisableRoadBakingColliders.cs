@@ -13,10 +13,4 @@ public class DisableRoadBakingColliders : MonoBehaviour
             Destroy(child.GetComponent<PolygonCollider2D>());
         }
     }
-    
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

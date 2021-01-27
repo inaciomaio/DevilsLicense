@@ -2,11 +2,6 @@
 
 public class CarAI : MonoBehaviour
 {
-    private WaypointNavigator navigator;
-    private CrosswalkBehaviour crosswalk;
-
-
-
     public float TurningSpeed = 3f;
 
     //public float BreakingPower = 5f;
@@ -25,7 +20,6 @@ public class CarAI : MonoBehaviour
 
     private void Awake()
     {
-        navigator = GetComponent<WaypointNavigator>();
         //Vector3 previousPosition = transform.position;
         Physics2D.queriesStartInColliders = false;
         TargetSpeed = 8.333333333f;
