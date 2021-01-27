@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class GameOverUi : MonoBehaviour
 {
-    private GameObject _youLost;
-    private GameObject _youWon;
+    public GameObject _youLost;
+    public GameObject _youWon;
     
     private TextMeshProUGUI _errorText;
     
-    private Manager _manager;
+    public Manager _manager;
+    public GlobalManager _globalManager;
+    public Characters livchar;
+
     void Awake()
     {
         _youLost = GameObject.Find("DefeatText");
@@ -21,8 +24,13 @@ public class GameOverUi : MonoBehaviour
     
     void Start()
     {
+        if (GameObject.Find("Liv") != null)
+        {
+            livchar = GameObject.Find("Liv").GetComponent<Characters>();
+        }
+        _globalManager = GameObject.Find("GlobalManager").GetComponent<GlobalManager>(); // THIS IMPLIES THAT THE SCENE SHOULD BE RUN *AFTER* SCENE 0
         _manager = GameObject.Find("Manager").GetComponent<Manager>();
-        
+
         _youWon.SetActive(false);
         _youLost.SetActive(false);
 
@@ -40,23 +48,38 @@ public class GameOverUi : MonoBehaviour
     
     public void RetryButton()
     {
-        _manager.errorCount = 0;
+        //if is Liv
+        CheckIfMaxScoreLiv();
+        _globalManager.SaveGame();
         SceneManager.LoadScene(_manager.currentSceneIndex);
     }
 
     public void ToMenuButton()
     {
-        _manager.errorCount = 0;
+        //if is Liv
+        CheckIfMaxScoreLiv();
+        _globalManager.SaveGame();
         SceneManager.LoadScene("Menu");
     }
 
     public void ExitButton()
     {
+        //if is Liv
+        CheckIfMaxScoreLiv();
+        _globalManager.SaveGame();
         Application.Quit();
     }
 
     public void ResumeButton()
     {
         
+    }
+
+    void CheckIfMaxScoreLiv()
+    {
+        if (_manager.errorCount > _globalManager.maxLivScore)
+        {
+            _globalManager.maxLivScore = _manager.errorCount;
+        }
     }
 }

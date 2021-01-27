@@ -157,6 +157,7 @@
           <e p="ReadMe.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
           <e p="DDOL.cs" t="Include" />
           <e p="GlobalManager.cs" t="Include" />
           <e p="Inácio" t="Include">
@@ -182,6 +183,7 @@
               <e p="WaypointNavigator.cs" t="Include" />
             </e>
           </e>
+          <e p="LevelButtons.cs" t="Include" />
           <e p="Loader.cs" t="Include" />
           <e p="Manager.cs" t="Include" />
           <e p="MenuButton.cs" t="Include" />
@@ -198,6 +200,7 @@
             <e p="HorizontalLight.cs" t="Include" />
             <e p="IntersectionLights.cs" t="Include" />
             <e p="LevelEnd.cs" t="Include" />
+            <e p="Levels.cs" t="Include" />
             <e p="RaycastSign.cs" t="Include" />
             <e p="Sign.cs" t="Include" />
             <e p="Test Scene" t="Include">

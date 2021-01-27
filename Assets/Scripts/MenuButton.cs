@@ -24,5 +24,21 @@ public class MenuButton : MonoBehaviour
     public void DebugRoom()
     {
         SceneManager.LoadScene(2);
+
+    }
+
+    public void ToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void ToCredits()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void ToCharSelect()
+    {
+        SceneManager.LoadScene(2);
     }
 }

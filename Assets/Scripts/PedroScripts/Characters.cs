@@ -9,6 +9,8 @@ public class Characters : MonoBehaviour
     private int errors;
     public float timeSinceError;
     private bool noErrors;
+    public bool isLiv;
+    public bool isNikolai;
 
     void Start()
     {
@@ -25,15 +27,25 @@ public class Characters : MonoBehaviour
         _animator.SetInteger("Errors",errors);
         _animator.SetBool("NoErrors",noErrors);
 
-        if (timeSinceError > 20)
+        if (isLiv)
         {
-            noErrors = true;
-            timeSinceError = 0;
+            if (timeSinceError > 15)
+            {
+                noErrors = true;
+            }
         }
-
-        if (timeSinceError > 10)
+        else
         {
-            noErrors = false;
+            if (timeSinceError > 25)
+            {
+                noErrors = true;
+                timeSinceError = 0;
+            }
+
+            if (timeSinceError > 10)
+            {
+                noErrors = false;
+            }
         }
     }
 }

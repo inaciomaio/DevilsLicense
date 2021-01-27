@@ -45,6 +45,8 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     private GameObject error0;
     private GameObject error1;
     private GameObject error2;
+
+    private GlobalManager _globalManager;
     private CarAI _carAi;
     public GameObject stars;
     public Transform starsPoint;
@@ -55,6 +57,8 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     void Awake()
     {
         Time.timeScale = 1;
+        _globalManager = GameObject.Find("GlobalManager").GetComponent<GlobalManager>();
+        _globalManager.manager = gameObject.GetComponent<Manager>();
         prompt = GameObject.Find("Prompt");
         car = GameObject.Find("Player");
         destination = GameObject.Find("Destination");
@@ -71,7 +75,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         _carAi = car.GetComponent<CarAI>();
         prompt.SetActive(false);
         gameOverUi.SetActive(false);
-        
+
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
     

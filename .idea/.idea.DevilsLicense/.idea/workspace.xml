@@ -12,17 +12,22 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/RaycastSign.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelButtons.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../Other/Backup/DevilsLicense/Assets/Scripts/Manager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/PedroBarbosaPlatformer2D - First Game/Assets/Scripts/Persistence.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/526469D5-A48C-43EE-BD9A-F19F8745AFA1/d3/21676b42/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/Persistence.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/PedroBarbosaPlatformer2D - First Game/Assets/Scripts/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Loader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Uni/ULP LP1 TP2 Ship/Source/Assets/Scripts/TreasureScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PauseButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Backup/DevilsLicense Backup/Assets/Scripts/GlobalManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/Levels.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../My Stuff/Unity/Tests/Preload Scene Test/Assets/Manager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PedroScripts/Characters.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -40,7 +45,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/CrosswalkSign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/AudioOut.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/Editor/PathEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/Editor/PathManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Options.cs" />
@@ -48,20 +52,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Car.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/RaycastSign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pause.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GlobalLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GlobalManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PauseButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/TimingSlider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Characters.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/AI/PedAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Persitence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Persistence.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GlobalManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Levels.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Characters.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
       </list>
     </option>
   </component>
@@ -150,6 +161,7 @@
       <workItem from="1611514839379" duration="13414000" />
       <workItem from="1611549886800" duration="5000" />
       <workItem from="1611587859486" duration="29954000" />
+      <workItem from="1611683112305" duration="23834000" />
     </task>
     <servers />
   </component>
