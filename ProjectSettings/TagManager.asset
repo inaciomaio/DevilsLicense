@@ -15,6 +15,7 @@ TagManager:
   - Vertical Light
   - Horizontal Light
   - Crosswalk
+  - test
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4694351608907323173}
   - component: {fileID: 8093172447901359094}
   - component: {fileID: 4047800919844982858}
+  - component: {fileID: 916257892}
   m_Layer: 0
   m_Name: Crosswalk
   m_TagString: GreenCrosswalk
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4994937977386092932}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 49.42, y: 3.51, z: -205.41016}
-  m_LocalScale: {x: 0.4801453, y: 0.4801454, z: 0.48014525}
+  m_LocalScale: {x: 0.4801453, y: 0.48014528, z: 0.48014525}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -138,4 +139,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6198b2f581bcc0248833d9a512bcc089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PedDetected: 0
+  NumberOfPeds: 0
+--- !u!50 &916257892
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4994937977386092932}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 0

@@ -4,6 +4,7 @@ using UnityEngine.AI;
 
 public class PedAI : MonoBehaviour
 {
+    
     private PedDestinationManager manager;
     private NavMeshAgent agent;
     private SpriteRenderer childSprite;
@@ -11,6 +12,7 @@ public class PedAI : MonoBehaviour
     public List<Sprite> Sprites = new List<Sprite>();
 
     public int DestinationIndex;
+    private float weight;
     public Transform CurrentDestinationTransform;
 
     // Start is called before the first frame update
@@ -22,6 +24,12 @@ public class PedAI : MonoBehaviour
 
 
         childSprite.sprite = Sprites[Random.Range(0, Sprites.Count - 1)];
+
+        foreach(Transform child in transform)
+        {
+            float random = Random.Range(1.5f, 3.5f);
+            child.localScale = new Vector3(random, random);
+        }
 
 
         // Update is called once per frame

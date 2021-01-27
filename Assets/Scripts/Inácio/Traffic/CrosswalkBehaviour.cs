@@ -4,21 +4,39 @@ using UnityEngine;
 
 public class CrosswalkBehaviour : MonoBehaviour
 {
-    public bool PedDetected;
+
+    public int NumberOfPeds;
+
+   // private void OnTriggerStay2D(Collider2D collision)
+   // {
+   //     //Debug.LogWarning(collision.gameObject.name);
+   //     if (collision.gameObject.CompareTag("Ped"))
+   //     {
+   //         transform.gameObject.tag = "RedCrosswalk";
+   //     }
+   //     else transform.gameObject.tag = "GreenCrosswalk";
+   // }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Ped"))
+        if (collision.gameObject.CompareTag("Ped"))
         {
+            Debug.Log("sucker");
+            NumberOfPeds++;
             transform.gameObject.tag = "RedCrosswalk";
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if(collision.CompareTag("Ped"))
+        if (collision.gameObject.CompareTag("Ped"))
         {
-            transform.gameObject.tag = "GreenCrosswalk";
+            NumberOfPeds--;
+            if(NumberOfPeds == 0)
+            {
+                transform.gameObject.tag = "GreenCrosswalk";
+            }
+            
         }
     }
 }
