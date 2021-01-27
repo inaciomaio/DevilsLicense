@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 using UnityEngine.AI;
 
 public class PedAI : MonoBehaviour
 {
     private PedDestinationManager manager;
     private NavMeshAgent agent;
+    private SpriteRenderer childSprite;
+    [SerializeField]
+    public List<Sprite> Sprites = new List<Sprite>();
+
     public int DestinationIndex;
     public Transform CurrentDestinationTransform;
 
@@ -13,6 +18,10 @@ public class PedAI : MonoBehaviour
     {
         manager = FindObjectOfType<PedDestinationManager>();
         agent = transform.GetComponent<NavMeshAgent>();
+        childSprite = gameObject.GetComponentInChildren<SpriteRenderer>();
+
+
+        childSprite.sprite = Sprites[Random.Range(0, Sprites.Count - 1)];
 
 
         // Update is called once per frame

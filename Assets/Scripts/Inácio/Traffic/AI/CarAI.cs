@@ -5,6 +5,8 @@ public class CarAI : MonoBehaviour
     private WaypointNavigator navigator;
     private CrosswalkBehaviour crosswalk;
 
+
+
     public float TurningSpeed = 3f;
 
     //public float BreakingPower = 5f;
