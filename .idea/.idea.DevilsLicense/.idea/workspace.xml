@@ -58,7 +58,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PauseButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/TimingSlider.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/AI/PedAI.cs" />
@@ -67,12 +66,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Persitence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Persistence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GlobalManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Levels.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Characters.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
       </list>
     </option>
   </component>
@@ -162,6 +162,9 @@
       <workItem from="1611549886800" duration="5000" />
       <workItem from="1611587859486" duration="29954000" />
       <workItem from="1611683112305" duration="23834000" />
+      <workItem from="1611718811451" duration="329000" />
+      <workItem from="1611762561242" duration="9329000" />
+      <workItem from="1611789746716" duration="2799000" />
     </task>
     <servers />
   </component>
