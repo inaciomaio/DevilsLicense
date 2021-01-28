@@ -121,6 +121,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &594145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5131691479434486351, guid: ad46154e87012ab4c943f915a877d7d5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1813583022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &594146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa5cec3d7540ca4ab58a0c6638be629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IdleClip: {fileID: 8300000, guid: 89ea05fae9c356e41b931fa967495f85, type: 3}
+  PitchMin: 1.45
+  PitchMax: 1.85
+  DopplerLevel: 1
+  UseDoppler: 1
 --- !u!1 &6139731
 GameObject:
   m_ObjectHideFlags: 0
@@ -53723,6 +53746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1946569268}
   - component: {fileID: 1946569267}
+  - component: {fileID: 1946569269}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -53756,6 +53780,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &1946569269
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946569266}
+  m_Enabled: 1
 --- !u!1 &1947071070
 GameObject:
   m_ObjectHideFlags: 0
