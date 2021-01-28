@@ -37,7 +37,7 @@ public class CarSound : MonoBehaviour
         
         if(startedSound)
         {
-            if(!car.CanDrive)
+            if(!car.CanDrive | car.TargetSpeed == 0)
             {
                 source.pitch = 1;
             }
