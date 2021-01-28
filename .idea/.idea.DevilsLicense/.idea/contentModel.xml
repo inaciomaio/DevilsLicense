@@ -176,9 +176,6 @@
                 <e p="PathEditor.cs" t="Include" />
                 <e p="PathManager.cs" t="Include" />
               </e>
-              <e p="Signs" t="Include">
-                <e p="StopSign.cs" t="Include" />
-              </e>
               <e p="Waypoint.cs" t="Include" />
               <e p="WaypointNavigator.cs" t="Include" />
             </e>

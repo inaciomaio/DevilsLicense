@@ -30,7 +30,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     public int errorCount = 0;
 
     //GameObjects
-
+    
     public GameObject gameOverUi;
     public GameObject prompt; //Traffic Light Prompt
     public GameObject car; //Current
@@ -45,6 +45,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     private GameObject error0;
     private GameObject error1;
     private GameObject error2;
+    public GameObject instructions;
 
     private GlobalManager _globalManager;
     private CarAI _carAi;
@@ -75,8 +76,10 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         _carAi = car.GetComponent<CarAI>();
         prompt.SetActive(false);
         gameOverUi.SetActive(false);
+        instructions = GameObject.Find("Instructions");
 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        StartCoroutine(InstructionPopUp());
     }
     
     void Start()
@@ -225,5 +228,14 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     {
         LeanTween.move(stars, starsPoint, 0.3f);
         yield break;
+    }
+
+    IEnumerator InstructionPopUp()
+    {
+        Time.timeScale = 0;
+        instructions.SetActive(true);
+        yield return new WaitForSecondsRealtime(5);
+        instructions.SetActive(false);
+        Time.timeScale = 1;
     }
 }
