@@ -6,12 +6,15 @@ using UnityEngine.SceneManagement;
 public class PauseButton : MonoBehaviour
 {
     private Pause _managerpause;
+    private Manager _manager;
     public TMPro.TMP_Dropdown resolutionDropdown;
     public Resolution[] resolutions;
     
     void Start()
     {
         _managerpause = GameObject.Find("Manager").GetComponent<Pause>();
+
+        _manager = GameObject.Find("Manager").GetComponent<Manager>();
         
         resolutions = Screen.resolutions;
 
@@ -40,6 +43,7 @@ public class PauseButton : MonoBehaviour
     public void ResumeButton()
     {
         _managerpause.ResumeGameButton();
+        _manager._carAi.CanDrive = true;
     }
 
     public void MenuButton()
@@ -63,5 +67,11 @@ public class PauseButton : MonoBehaviour
     public void SetFullscreen(bool isFs)
     {
         Screen.fullScreen = isFs;
+    }
+
+    public void Tryagaine()
+    {
+        AudioListener.pause = false;
+        SceneManager.LoadScene(_manager.currentSceneIndex);
     }
 }

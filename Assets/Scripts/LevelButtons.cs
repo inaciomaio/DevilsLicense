@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelButtons : MonoBehaviour
 {
@@ -8,18 +9,23 @@ public class LevelButtons : MonoBehaviour
     public GameObject Nikocard;
 
     private GameObject backbttn;
-    /*
-    if (GM.errors == 0 2 3 etc)
-    {
-        Livcard.score == etc
-    }*/
+
+    private GlobalManager _globalManager;
+    
+    // if (GM.errors == 0 2 3 etc)
+    // { IGNORE THIS
+    //     Livcard.score == etc
+    // }
 
     void Awake()
     {
+
         backbttn = GameObject.Find("BackButton"); 
         
         Livcard = GameObject.Find("LivCard");
         Nikocard = GameObject.Find("NikoCard");
+
+        _globalManager = GameObject.Find("GlobalManager").GetComponent<GlobalManager>();
         
         Livcard.SetActive(false);
         Nikocard.SetActive(false);
@@ -42,5 +48,17 @@ public class LevelButtons : MonoBehaviour
         backbttn.SetActive(true);
         Livcard.SetActive(false);
         Nikocard.SetActive(false);
+    }
+
+    public void StartNiko()
+    {
+        _globalManager.nikopicked = true;
+        SceneManager.LoadScene(1);
+    }
+
+    public void StartLiv()
+    {
+        _globalManager.livpicked = true;
+        SceneManager.LoadScene(1);
     }
 }

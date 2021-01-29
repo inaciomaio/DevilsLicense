@@ -6,16 +6,28 @@ public class Characters : MonoBehaviour
 {
     private Animator _animator;
     private Manager _manager;
+    private GlobalManager _globalManager;
     private int errors;
     public float timeSinceError;
     private bool noErrors;
     public bool isLiv;
     public bool isNikolai;
-
+    
     void Start()
     {
+        _globalManager = GameObject.Find("GlobalManager").GetComponent<GlobalManager>();
         _manager = GameObject.Find("Manager").GetComponent<Manager>();
         _animator = gameObject.GetComponent<Animator>();
+        
+        if (_globalManager.livpicked && isNikolai)
+        {
+            gameObject.SetActive(false);
+        }
+        else if (_globalManager.nikopicked && isLiv)
+        {
+            gameObject.SetActive(false);
+        }
+        
         timeSinceError = 0;
     }
 
@@ -30,6 +42,13 @@ public class Characters : MonoBehaviour
         if (isLiv)
         {
             if (timeSinceError > 15)
+            {
+                noErrors = true;
+            }
+        }
+        else if (isNikolai)
+        {
+            if (timeSinceError > 25)
             {
                 noErrors = true;
             }

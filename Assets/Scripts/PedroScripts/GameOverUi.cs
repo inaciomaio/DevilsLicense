@@ -13,7 +13,6 @@ public class GameOverUi : MonoBehaviour
     
     public Manager _manager;
     public GlobalManager _globalManager;
-    public Characters livchar;
 
     void Awake()
     {
@@ -24,10 +23,6 @@ public class GameOverUi : MonoBehaviour
     
     void Start()
     {
-        if (GameObject.Find("Liv") != null)
-        {
-            livchar = GameObject.Find("Liv").GetComponent<Characters>();
-        }
         _globalManager = GameObject.Find("GlobalManager").GetComponent<GlobalManager>(); // THIS IMPLIES THAT THE SCENE SHOULD BE RUN *AFTER* SCENE 0
         _manager = GameObject.Find("Manager").GetComponent<Manager>();
 
@@ -48,26 +43,50 @@ public class GameOverUi : MonoBehaviour
     
     public void RetryButton()
     {
-        //if is Liv
-        CheckIfMaxScoreLiv();
-        _globalManager.SaveGame();
-        SceneManager.LoadScene(_manager.currentSceneIndex);
+        if (_globalManager.livpicked)
+        {
+            CheckIfMaxScoreLiv();
+            _globalManager.SaveGame();
+            SceneManager.LoadScene(_manager.currentSceneIndex);
+        }
+        else
+        {
+            CheckIfMaxScoreNiko();
+            _globalManager.SaveGame();
+            SceneManager.LoadScene(_manager.currentSceneIndex);
+        }
     }
 
     public void ToMenuButton()
     {
-        //if is Liv
-        CheckIfMaxScoreLiv();
-        _globalManager.SaveGame();
-        SceneManager.LoadScene("Menu");
+        if (_globalManager.livpicked)
+        {
+            CheckIfMaxScoreLiv();
+            _globalManager.SaveGame();
+            SceneManager.LoadScene(_manager.currentSceneIndex);
+        }
+        else
+        {
+            CheckIfMaxScoreNiko();
+            _globalManager.SaveGame();
+            SceneManager.LoadScene(_manager.currentSceneIndex);
+        }
     }
 
     public void ExitButton()
     {
-        //if is Liv
-        CheckIfMaxScoreLiv();
-        _globalManager.SaveGame();
-        Application.Quit();
+        if (_globalManager.livpicked)
+        {
+            CheckIfMaxScoreLiv();
+            _globalManager.SaveGame();
+            SceneManager.LoadScene(_manager.currentSceneIndex);
+        }
+        else
+        {
+            CheckIfMaxScoreNiko();
+            _globalManager.SaveGame();
+            SceneManager.LoadScene(_manager.currentSceneIndex);
+        }
     }
 
     public void ResumeButton()
@@ -80,6 +99,13 @@ public class GameOverUi : MonoBehaviour
         if (_manager.errorCount > _globalManager.maxLivScore)
         {
             _globalManager.maxLivScore = _manager.errorCount;
+        }
+    }
+    void CheckIfMaxScoreNiko()
+    {
+        if (_manager.errorCount > _globalManager.maxNikoScore)
+        {
+            _globalManager.maxNikoScore = _manager.errorCount;
         }
     }
 }

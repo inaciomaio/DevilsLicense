@@ -26,18 +26,6 @@ public class Pause : MonoBehaviour
 
     }
 
-    void Start()
-    {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("Menu"))
-        {
-            isAbleToPause = false;
-        }
-        else
-        {
-            isAbleToPause = true;
-        }
-    }
-    
     void Update()
     {
         if (isAbleToPause && _manager.gameEnded == false)
@@ -54,6 +42,11 @@ public class Pause : MonoBehaviour
                 }
             }
         }
+
+        if (IsPaused)
+        {
+            _manager._carAi.CanDrive = false;
+        }
     }
 
     void ResumeGame()
@@ -64,6 +57,7 @@ public class Pause : MonoBehaviour
         Time.timeScale = 1f;
         AudioListener.pause = false;
         IsPaused = false;
+        _manager._carAi.CanDrive = true;
     }
 
     void PauseGame()
@@ -74,7 +68,7 @@ public class Pause : MonoBehaviour
         _manager.stars.SetActive(false);
         pauseUI.SetActive(true);
         AudioListener.pause = true;
-        Time.timeScale = 0f;
+        _manager._carAi.CanDrive = false;
         IsPaused = true;
     }
 

@@ -39,7 +39,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/managerDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/managerDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Test Scene/WaypointChoose.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ManagerDestroyer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DistanceManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/texttimer.cs" />
@@ -50,29 +49,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Options.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/AI/CarAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Car.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/RaycastSign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/LevelEnd.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Pause.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GlobalLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PauseButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/IntersectionLights.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/TimingSlider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/VerticalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/HorizontalLight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/AI/PedAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/LevelButtons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Persitence.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Persistence.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GlobalManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Inácio/Traffic/CarSound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/RaycastSign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/DistanceSlider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/GameOverUi.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelButtons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GlobalManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Levels.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Characters.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PedroScripts/Sign.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pause.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PauseButton.cs" />
       </list>
     </option>
   </component>
@@ -165,6 +166,11 @@
       <workItem from="1611718811451" duration="329000" />
       <workItem from="1611762561242" duration="9329000" />
       <workItem from="1611789746716" duration="2799000" />
+      <workItem from="1611848860734" duration="714000" />
+      <workItem from="1611850160349" duration="606000" />
+      <workItem from="1611856200134" duration="140000" />
+      <workItem from="1611856367278" duration="5839000" />
+      <workItem from="1611877554036" duration="7878000" />
     </task>
     <servers />
   </component>

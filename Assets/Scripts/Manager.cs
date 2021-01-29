@@ -48,7 +48,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     public GameObject instructions;
 
     private GlobalManager _globalManager;
-    private CarAI _carAi;
+    public CarAI _carAi;
     public GameObject stars;
     public Transform starsPoint;
 
@@ -79,6 +79,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         instructions = GameObject.Find("Instructions");
 
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        pause = gameObject.GetComponent<Pause>();
         StartCoroutine(InstructionPopUp());
     }
     
@@ -90,9 +91,7 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
         error0.SetActive(false);
         error1.SetActive(false);
         error2.SetActive(false);
-
-        pause = gameObject.GetComponent<Pause>();
-
+        
         veloc30 = GameObject.Find("30pont");
         veloc50 = GameObject.Find("50pont");
     }
@@ -133,7 +132,10 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
             power2.SetActive(false);
         }
 
-        T += Time.deltaTime;
+        if (pause.IsPaused == false)
+        {
+            T += Time.deltaTime;
+        }
         distance = Vector3.Distance(destination.transform.position, car.transform.position);
 
         switch (errorCount)
@@ -234,8 +236,10 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
     {
         Time.timeScale = 0;
         instructions.SetActive(true);
-        yield return new WaitForSecondsRealtime(5);
+        pause.isAbleToPause = false;
+        yield return new WaitForSecondsRealtime(90);
         instructions.SetActive(false);
         Time.timeScale = 1;
+        pause.isAbleToPause = true;
     }
 }

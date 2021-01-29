@@ -12,6 +12,10 @@ public class GlobalManager : MonoBehaviour
     // public float changeableVolume;
     // public Slider volumeSlider;
     public int maxLivScore;
+    public int maxNikoScore;
+
+    public bool livpicked;
+    public bool nikopicked;
     public Manager manager;
     private static GameObject globalManager;
 
@@ -33,11 +37,31 @@ public class GlobalManager : MonoBehaviour
         LoadGame();
     }
 
+    void Update()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByBuildIndex(0))
+        {
+            livpicked = false;
+            nikopicked = false;
+        }
+    }
+    
+
     public void SaveGame()
     {
         var state = new GameState();
         state.Version = 1;
-        state.Score = manager.errorCount;
+        if (nikopicked)
+        {
+            state.NikolaiScore = manager.errorCount;
+            state.LivScore = maxLivScore;
+        }
+        else
+        {
+            state.LivScore = manager.errorCount;
+            state.NikolaiScore = maxNikoScore;
+        }
+        
 
         var filename = Path.Combine(Application.persistentDataPath, "game.sav");
 
@@ -66,8 +90,8 @@ public class GlobalManager : MonoBehaviour
             switch (state.Version)
             {
                 case 1:
-                    
-                    maxLivScore = state.Score;
+                    maxNikoScore = state.NikolaiScore;
+                    maxLivScore = state.LivScore;
                     break;
             }
         }
@@ -77,6 +101,7 @@ public class GlobalManager : MonoBehaviour
     public struct GameState
     {
         public int Version;
-        public int Score;
+        public int NikolaiScore;
+        public int LivScore;
     }
 }

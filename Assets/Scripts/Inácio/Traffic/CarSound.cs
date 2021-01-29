@@ -59,7 +59,7 @@ public class CarSound : MonoBehaviour
     {
         source = gameObject.AddComponent<AudioSource>();
         source.clip = clip;
-        source.volume = .25f;
+        source.volume = 0.06f;
         source.loop = true;
 
         source.time = Random.Range(0f, clip.length);

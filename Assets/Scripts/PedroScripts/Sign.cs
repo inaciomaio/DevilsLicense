@@ -130,7 +130,6 @@ public class Sign : MonoBehaviour
         StopWheel.SetActive(false);
         _manager.promptIsPossible = true;
         Time.timeScale = 1f;
-        _manager.pause.isAbleToPause = true;
         NullifyTimingSlider();
         if (_manager.promptIsPossible && pressedInTime == false) //ErrorCount timing
         {

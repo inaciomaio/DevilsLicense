@@ -42,10 +42,26 @@ public class Levels : MonoBehaviour
                     break;
             }
         }
-
-        if (isNikolai) //if this is in Nikolai component
+        else if (isNikolai)
         {
-            //score = _globalManager.maxNikoScore;
+            score = _globalManager.maxNikoScore;
+            switch (score)
+            {
+                case 0:
+                    break;
+                case 1:
+                    _checkmark1.SetActive(true);
+                    break;
+                case 2:
+                    _checkmark1.SetActive(true);
+                    _checkmark2.SetActive(true);
+                    break;
+                case 3:
+                    _checkmark1.SetActive(true);
+                    _checkmark2.SetActive(true);
+                    _checkmark3.SetActive(true);
+                    break;
+            }
         }
     }
 }
