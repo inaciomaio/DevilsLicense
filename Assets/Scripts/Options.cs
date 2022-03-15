@@ -77,7 +77,6 @@ public class Options : MonoBehaviour
         LeanTween.alpha(Start.GetComponent<RectTransform>(), 0f, 0.5f);
         LeanTween.alpha(Exit.GetComponent<RectTransform>(), 0f, 0.5f);
         LeanTween.alpha(Logo, 0f, 0.5f);
-        yield return new WaitForSecondsRealtime(1f);
         optionsObj.SetActive(true);
         volumeSlider.SetActive(true);
         LeanTween.alpha(optionsObj, 1f, 0.1f);
@@ -101,7 +100,6 @@ public class Options : MonoBehaviour
         LeanTween.alpha(Logo, 1, 0.5f);
         LeanTween.alpha(Start.GetComponent<RectTransform>(), 1, 0.5f);
         LeanTween.alpha(Exit.GetComponent<RectTransform>(), 1, 0.5f);
-        yield return new WaitForSecondsRealtime(1f);
         Logo.SetActive(toggleActive);
         Start.SetActive(toggleActive);
         Exit.SetActive(toggleActive);

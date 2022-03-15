@@ -109,11 +109,6 @@ public class Manager : MonoBehaviour // This is the Local Level's Manager compon
             veloc50.SetActive(true);
         }
         
-        if (CanClickSign)
-        {
-            Debug.Log("CANCLICKSIGN");
-        }
-        
         if (changeLightsIsPossible)
         {
             power1.SetActive(true);

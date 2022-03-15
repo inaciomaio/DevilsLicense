@@ -21,7 +21,6 @@ public class CrosswalkBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ped"))
         {
-            Debug.Log("sucker");
             NumberOfPeds++;
             transform.gameObject.tag = "RedCrosswalk";
         }

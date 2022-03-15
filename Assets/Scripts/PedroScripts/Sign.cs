@@ -200,10 +200,25 @@ public class Sign : MonoBehaviour
                     }
                     break;
                 case 4:
-                    car.TargetSpeed = 5f;
+                    if (car == null)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        car.TargetSpeed = 5f;
+                    }
                     break;
                 case 5:
-                    car.TargetSpeed = 8.3333333f;
+                    if (car == null)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        car.TargetSpeed = 8.3333333f;
+
+                    }
                     break;
             }
         }

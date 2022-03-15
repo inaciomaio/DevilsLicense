@@ -23,7 +23,6 @@ public class Pause : MonoBehaviour
         _manager = gameObject.GetComponent<Manager>();
         pauseUI = GameObject.Find("Pause");
         pauseUI.SetActive(false);
-
     }
 
     void Update()
